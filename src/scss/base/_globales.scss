@@ -23,8 +23,14 @@ main {
 }
 
 .contenedor {
-    width: 95%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contenedor-max {
+    width: 75%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 

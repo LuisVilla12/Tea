@@ -1,2 +1,41 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+.definicion {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+    }
+    .momentanea {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        @include m.desktop {
+            display: none;
+        }
+    }
+    @include m.desktop {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        background-image: url(../img/img4.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    &__contenido {
+        padding: 4rem 5rem;
+        background-color: v.$primario;
+        text-align: justify;
+        @include m.desktop {
+            grid-column: 1/3;
+        }
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
+        p {
+            color: v.$blanco;
+        }
+    }
+}
