@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.header {
+    background-color: v.$primario;
+    &__barra {
+        @include m.tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.nav {
+    &__a {
+        font-size: 1.9rem;
+        color: v.$blanco;
+        margin-right: 3rem;
+        &:last-of-type {
+            margin: 0;
+        }
+        i {
+            margin-right: .6rem;
+        }
+        &:hover {
+            color: darken($color: v.$blanco, $amount: 10)
+        }
+    }
+}

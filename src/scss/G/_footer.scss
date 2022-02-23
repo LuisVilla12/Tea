@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.footer {
+    background-color: v.$primario;
+    &__grid {
+        padding: 2rem;
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+
+.redes {
+    h3 {
+        text-align: center;
+    }
+    &__iconos {
+        margin-top: 1rem;
+        font-size: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+        color: v.$blanco;
+    }
+}
+
+.copy {
+    background-color: v.$terciario;
+    padding: 1rem;
+    p {
+        text-align: center;
+        font-weight: bold;
+        margin: 0;
+        color: v.$blanco;
+    }
+}
