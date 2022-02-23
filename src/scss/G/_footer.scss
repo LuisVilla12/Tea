@@ -19,7 +19,9 @@
         font-size: 3rem;
         display: flex;
         justify-content: space-evenly;
-        color: v.$blanco;
+        a {
+            color: v.$blanco;
+        }
     }
 }
 
