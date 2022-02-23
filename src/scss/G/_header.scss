@@ -9,6 +9,11 @@
             align-items: center;
         }
     }
+    &__titulo {
+        color: v.$blanco;
+        font-weight: bold;
+        font-size: 2rem;
+    }
 }
 
 .nav {
