@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.noticias {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 33rem);
+        column-gap: 5rem;
+        @include m.efectoScrollHorizontal;
+        @include m.tablet {
+            @include m.grid(3, 3rem);
+            overflow-x: hidden;
+        }
+    }
+}

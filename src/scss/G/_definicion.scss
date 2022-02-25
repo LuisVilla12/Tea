@@ -26,9 +26,12 @@
         background-position: bottom right;
     }
     &__contenido {
-        padding: 4rem 5rem;
         background-color: v.$primario;
         text-align: justify;
+        padding: 2rem;
+        @include m.tablet {
+            padding: 2rem 5rem;
+        }
         @include m.desktop {
             grid-column: 1/3;
         }
