@@ -2,13 +2,63 @@
 @use 'base/mixins' as m;
 .noticias {
     &__grid {
+        margin: 2rem 0;
         display: grid;
         grid-template-columns: repeat(3, 33rem);
+        grid-template-rows: unset;
         column-gap: 5rem;
         @include m.efectoScrollHorizontal;
         @include m.tablet {
-            @include m.grid(3, 3rem);
             overflow-x: hidden;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 0;
+            column-gap: 2rem;
+        }
+        @include m.desktop {
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 2rem;
+        }
+    }
+    &__titulo {
+        text-align: center;
+        color: v.$secundario;
+        margin: 2rem 0;
+    }
+}
+
+.noticia {
+    background-color: v.$terciario;
+    box-shadow: 10px 7px 8px -2px rgba(0, 0, 0, 0.56);
+    img {
+        height: 18rem;
+        object-fit: cover;
+        width: 100%;
+    }
+    h4 {
+        margin: 1rem 0;
+        text-align: center;
+        padding: 1rem;
+        color: v.$blanco;
+    }
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        p {
+            color: v.$blanco;
+            margin: .5rem;
+        }
+        i {
+            margin-right: 1rem;
+        }
+    }
+    @include m.desktop {
+        &:first-of-type {
+            grid-row: 1 / 3;
+            grid-column: 1 / 3;
+            img {
+                height: 50rem;
+            }
         }
     }
 }
