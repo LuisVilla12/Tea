@@ -28,7 +28,6 @@
     &__a {
         font-size: 1.9rem;
         color: v.$blanco;
-        margin-right: 3rem;
         &:last-of-type {
             margin: 0;
         }
@@ -37,6 +36,9 @@
         }
         &:hover {
             color: darken($color: v.$blanco, $amount: 10)
+        }
+        @include m.tablet {
+            margin-right: 1.4rem;
         }
     }
     display: none;
