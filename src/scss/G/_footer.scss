@@ -52,9 +52,6 @@
     }
     &__map {
         height: 20rem;
-        @include m.tablet {
-            height: 25rem;
-        }
     }
     &__mapa {
         @include m.tablet {
