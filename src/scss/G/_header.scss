@@ -12,9 +12,13 @@
         align-items: center;
     }
     &__img {
-        width: 8rem;
-        height: 8rem;
+        width: 5rem;
+        height: 5rem;
         object-fit: cover;
+        @include m.tablet {
+            width: 6rem;
+            height: 6rem;
+        }
     }
     &__titulo {
         color: v.$blanco;
@@ -61,7 +65,7 @@
     background-color: rgba($color: #000000, $alpha: .7);
     width: 100%;
     height: 100%;
-    top: 6rem;
+    top: 7.5rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 0;

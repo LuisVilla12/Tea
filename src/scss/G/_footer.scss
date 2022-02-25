@@ -8,19 +8,22 @@
     &__grid {
         padding: 2rem;
         @include m.tablet {
-            @include m.grid(3, 2rem);
+            @include m.grid(4, 2rem);
         }
     }
 }
 
 .ubicacion {
     @include m.tablet {
-        grid-column: 1/3;
+        grid-column: 1/4;
     }
     &__contenido {
-        display: flex;
-        align-items: center;
-        column-gap: 1rem;
+        margin-top: 2rem;
+        display: grid;
+        @include m.tablet {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 1rem;
+        }
     }
     p {
         margin: .5rem 0 0 0;
@@ -30,11 +33,41 @@
         font-size: 1.5rem;
         margin-right: .5rem;
     }
+    &__maks {
+        display: grid;
+        place-items: center;
+    }
     &__itsx {
         object-fit: cover;
         width: 13rem;
         @include m.tablet {
             width: 12rem;
+        }
+    }
+    &__txt {
+        text-align: center;
+        @include m.tablet {
+            text-align: left;
+        }
+    }
+    &__map {
+        height: 20rem;
+        @include m.tablet {
+            height: 25rem;
+        }
+    }
+    &__mapa {
+        @include m.tablet {
+            grid-column: 1/3;
+        }
+    }
+    &__descripcion {
+        @include m.telefono {
+            display: grid;
+            place-items: center;
+        }
+        @include m.tablet {
+            grid-column: 3/5;
         }
     }
 }
