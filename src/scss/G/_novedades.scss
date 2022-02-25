@@ -58,4 +58,9 @@
         font-weight: bold;
         color: v.$primario;
     }
+    @include m.tablet {
+        &:nth-child(4) {
+            display: none;
+        }
+    }
 }

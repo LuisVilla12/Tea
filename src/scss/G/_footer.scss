@@ -31,9 +31,10 @@
         margin-right: .5rem;
     }
     &__itsx {
+        object-fit: cover;
         width: 13rem;
         @include m.tablet {
-            width: 8rem;
+            width: 12rem;
         }
     }
 }
