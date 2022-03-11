@@ -5,7 +5,8 @@
         margin: 2rem 0;
         display: grid;
         grid-template-columns: repeat(3, 33rem);
-        grid-template-rows: unset;
+        //FIXME: Tamaño de las noticias
+        grid-template-rows: 30rem;
         column-gap: 5rem;
         @include m.efectoScrollHorizontal;
         @include m.tablet {

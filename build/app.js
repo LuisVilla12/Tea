@@ -1,8 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     MenuDesplegable();
+    botones();
 });
 const hero = document.querySelector('.hero');
 const body = document.querySelector('body');
+const btnPadre = document.querySelector('.eleccion_padre');
+const btnHijo = document.querySelector('.eleccion_hijo');
+
+function botones() {
+    btnPadre.onclick = function() {
+        document.location.href = "material_apoyo.html";
+        console.log('click en btn padre')
+    }
+}
+
 
 function MenuDesplegable() {
     const menu = document.querySelector('.menu');
@@ -20,7 +31,7 @@ function MenuDesplegable() {
         const opcion3 = document.createElement('A');
 
         opcion1.href = "conocenos.html";
-        opcion2.href = "material.html";
+        opcion2.href = "eleccion__material.html";
         opcion3.href = "Registrarse.html";
 
 

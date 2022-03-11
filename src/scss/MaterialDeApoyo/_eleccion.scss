@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.elecciones {
+    display: grid;
+    grid-template-rows: repeat(2, 30rem);
+}
+
+.eleccion {
+    background-color: v.$secundario;
+    border-radius: 1rem;
+    margin: 1rem;
+    &__contenido {
+        padding: 2rem;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
