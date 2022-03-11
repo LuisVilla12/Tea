@@ -9,10 +9,7 @@
 }
 
 .material {
-    margin-bottom: 1rem;
-    &:last-of-type {
-        margin-bottom: 0;
-    }
+    margin-bottom: 1.5rem;
     box-shadow: 1rem 1rem 1.4rem -1.2rem rgba(51, 86, 241, 0.1);
     border-radius: 1rem;
     &:nth-last-of-type(n) {
@@ -48,6 +45,7 @@
         @include m.telefono {
             padding: 2rem 2rem 2rem 0;
         }
+        @include m.tablet {}
     }
     &__texto {
         text-align: justify;
