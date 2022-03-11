@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     MenuDesplegable();
     botones();
 });
-const hero = document.querySelector('.hero');
+//FIXME: .hero era la clase
+const hero = document.querySelector('.menu__hidden');
 const body = document.querySelector('body');
 const btnPadre = document.querySelector('.eleccion_padre');
 const btnHijo = document.querySelector('.eleccion_hijo');
