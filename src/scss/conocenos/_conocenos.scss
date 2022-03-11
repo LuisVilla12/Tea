@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.conocenos {
+    &__titulo {
+        text-align: center;
+        color: darkblue;
+        margin: 2rem 0;
+    }
+    &__alerta {
+        background-color: red;
+        text-align: center;
+        padding: 5rem 2rem;
+        border-radius: 2rem;
+        color: v.$blanco;
+    }
+}

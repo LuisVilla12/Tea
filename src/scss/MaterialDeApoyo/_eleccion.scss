@@ -6,6 +6,8 @@
 }
 
 .eleccion {
+    display: grid;
+    place-items: center;
     background-color: v.$secundario;
     border-radius: 1rem;
     margin: 1rem;
