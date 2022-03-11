@@ -9,8 +9,12 @@ const btnHijo = document.querySelector('.eleccion_hijo');
 
 function botones() {
     btnPadre.onclick = function() {
-        document.location.href = "material_apoyo.html";
+        document.location.href = "material_apoyo_padre.html";
         console.log('click en btn padre')
+    }
+    btnHijo.onclick = function() {
+        document.location.href = "material_apoyo_infante.html";
+        console.log('click en btn hijo')
     }
 }
 
