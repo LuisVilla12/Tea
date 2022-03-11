@@ -28,18 +28,23 @@
     }
 }
 
+// NAV
 .nav {
-    &__a {
-        font-size: 1.9rem;
-        color: v.$blanco;
+    li {
+        display: inline;
+        padding: 1.3rem .4rem;
         &:last-of-type {
             margin: 0;
         }
+        &:hover {
+            background-color: darken($color: v.$primario, $amount: 10);
+        }
+    }
+    &__a {
+        font-size: 1.9rem;
+        color: v.$blanco;
         i {
             margin-right: .6rem;
-        }
-        &:hover {
-            color: darken($color: v.$blanco, $amount: 10)
         }
         @include m.tablet {
             margin-right: 1.4rem;
@@ -60,7 +65,40 @@
     }
 }
 
+// SubMenus
+.nav>li {
+    float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    background-color: v.$primario;
+}
+
+.nav li:hover>ul {
+    display: block;
+    margin-top: 1rem;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li a {
+    display: block;
+    color: v.$blanco;
+    &:hover {
+        background-color: darken($color: v.$primario, $amount: 10);
+    }
+}
+
+// Menu emergente
 .contenedor-menu {
+    //FIXME: Abrir menu
+    @include m.tablet {
+        display: none;
+    }
     position: fixed;
     background-color: rgba($color: #000000, $alpha: .7);
     width: 100%;
