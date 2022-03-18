@@ -1,23 +1,52 @@
 document.addEventListener('DOMContentLoaded', function() {
     MenuDesplegable();
-    botones();
+    selectValue();
 });
 //FIXME: .hero era la clase
 const hero = document.querySelector('.menu__hidden');
 const body = document.querySelector('body');
-const btnPadre = document.querySelector('.eleccion_padre');
-const btnHijo = document.querySelector('.eleccion_hijo');
+const categoriaEnlaces = document.querySelectorAll('.cat1__enlace');
+const categoriaVideos = document.querySelectorAll('.cat2__video');
+const categoriaDocumentos = document.querySelectorAll('.cat3__documento');
 
+const selectCategoriaP = document.querySelector('.MenuCategoriaMovil');
 
-function botones() {
-    btnPadre.onclick = function() {
-        document.location.href = "material_apoyo_padre.html";
-        console.log('click en btn padre')
-    }
-    btnHijo.onclick = function() {
-        document.location.href = "material_apoyo_infante.html";
-        console.log('click en btn hijo')
-    }
+function selectValue() {
+    console.log('aa');
+    selectCategoriaP.addEventListener('change', () => {
+        var opcion = selectCategoriaP.value;
+        if (opcion == 1) {
+            categoriaEnlaces.forEach(function(ce) {
+                ce.classList.add('visible');
+            });
+            categoriaVideos.forEach(function(cv) {
+                cv.classList.remove('visible');
+            });
+            categoriaDocumentos.forEach(function(cd) {
+                cd.classList.remove('visible');
+            });
+        } else if (opcion == 2) {
+            categoriaEnlaces.forEach(function(ce) {
+                ce.classList.remove('visible');
+            });
+            categoriaVideos.forEach(function(cv) {
+                cv.classList.add('visible');
+            });
+            categoriaDocumentos.forEach(function(cd) {
+                cd.classList.remove('visible');
+            });
+        } else {
+            categoriaEnlaces.forEach(function(ce) {
+                ce.classList.remove('visible');
+            });
+            categoriaVideos.forEach(function(cv) {
+                cv.classList.remove('visible');
+            });
+            categoriaDocumentos.forEach(function(cd) {
+                cd.classList.add('visible');
+            });
+        }
+    });
 }
 
 
