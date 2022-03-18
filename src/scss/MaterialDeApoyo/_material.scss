@@ -9,14 +9,16 @@
 }
 
 .material {
-    margin-bottom: 1.5rem;
-    box-shadow: 1rem 1rem 1.4rem -1.2rem rgba(51, 86, 241, 0.1);
-    border-radius: 1rem;
-    &:nth-last-of-type(n) {
-        background-color: v.$terciario;
-    }
-    &:nth-last-of-type(n+1) {
-        background-color: v.$secundario;
+    &__cat1-enlace {
+        margin-bottom: 1.5rem;
+        box-shadow: 1rem 1rem 1.4rem -1.2rem rgba(51, 86, 241, 0.1);
+        border-radius: 1rem;
+        &:nth-last-of-type(n) {
+            background-color: v.$terciario;
+        }
+        &:nth-last-of-type(n+1) {
+            background-color: v.$secundario;
+        }
     }
     &__grid {
         display: grid;
@@ -59,13 +61,14 @@
         font-weight: bold;
         color: darken($color: v.$primario, $amount: 50);
     }
-    &__video {
+    &__cat2-video {
         margin: 3rem auto;
         @include m.tablet {
             @include m.grid(2, 1rem);
         }
         h3 {
             text-align: center;
+            color: blue;
         }
     }
 }

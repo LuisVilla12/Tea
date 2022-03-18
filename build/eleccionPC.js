@@ -3,16 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 const btnPadrePC = document.querySelector('.eleccionPC_padre');
 const btnHijoPC = document.querySelector('.eleccionPC_hijo');
-
+// Contenedores generales
 const contenedorPadrePC = document.querySelector('.tutores');
 const contenedorHijoPC = document.querySelector('.infantes');
-
+// botones de categorias
 const btnEnlaces = document.querySelector('.enlaces');
 const btnVideos = document.querySelector('.videos');
 const btnDocumentos = document.querySelector('.documentos');
-
-
-
+// contenedores de categorias
+const categoriaEnlaces = document.querySelectorAll('.cat1__enlace');
+const categoriaVideos = document.querySelectorAll('.cat2__video');
+const categoriaDocumentos = document.querySelectorAll('.cat3__documento');
 
 function botones() {
     btnPadrePC.onclick = function() {
@@ -28,15 +29,47 @@ function botones() {
         btnHijoPC.classList.add('activo');
     }
     btnEnlaces.onclick = function() {
+        btnEnlaces.classList.add('material__clasificacion__boton-activo');
+        btnVideos.classList.remove('material__clasificacion__boton-activo');
+        btnDocumentos.classList.remove('material__clasificacion__boton-activo');
 
-        console.log('enlaces')
+        categoriaEnlaces.forEach(function(ce) {
+            ce.classList.add('visible');
+        });
+        categoriaVideos.forEach(function(cv) {
+            cv.classList.remove('visible');
+        });
+        categoriaDocumentos.forEach(function(cd) {
+            cd.classList.remove('visible');
+        });
+
     }
     btnVideos.onclick = function() {
-
-        console.log('videos')
+        btnEnlaces.classList.remove('material__clasificacion__boton-activo');
+        btnVideos.classList.add('material__clasificacion__boton-activo');
+        btnDocumentos.classList.remove('material__clasificacion__boton-activo');
+        categoriaEnlaces.forEach(function(ce) {
+            ce.classList.remove('visible');
+        });
+        categoriaVideos.forEach(function(cv) {
+            cv.classList.add('visible');
+        });
+        categoriaDocumentos.forEach(function(cd) {
+            cd.classList.remove('visible');
+        });
     }
     btnDocumentos.onclick = function() {
-
-        console.log('documentos')
+        btnEnlaces.classList.remove('material__clasificacion__boton-activo');
+        btnVideos.classList.remove('material__clasificacion__boton-activo');
+        btnDocumentos.classList.add('material__clasificacion__boton-activo');
+        categoriaEnlaces.forEach(function(ce) {
+            ce.classList.remove('visible');
+        });
+        categoriaVideos.forEach(function(cv) {
+            cv.classList.remove('visible');
+        });
+        categoriaDocumentos.forEach(function(cd) {
+            cd.classList.add('visible');
+        });
     }
 }

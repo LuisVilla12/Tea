@@ -43,6 +43,12 @@
     display: none;
 }
 
+.cat1__enlace,
+.cat2__video,
+.cat3__documento {
+    display: none;
+}
+
 .visible {
     display: block;
 }
@@ -62,6 +68,7 @@
         color: v.$blanco;
         margin: 2rem 0 0 0;
         padding: 1rem;
+        cursor: pointer;
         &-activo {
             background-color: darken($color: v.$primario, $amount: 30);
         }
