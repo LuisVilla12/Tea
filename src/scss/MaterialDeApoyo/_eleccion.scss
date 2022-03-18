@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+// vista movil
 .elecciones {
     display: grid;
     grid-template-rows: repeat(2, 30rem);
@@ -19,22 +20,24 @@
     }
 }
 
+// vista PC
 .eleccionPC {
-    margin: 2rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     background-color: v.$blanco;
-    &__contenedor {
+    &__contenido {
         padding: 2rem;
         display: grid;
         place-items: center;
         text-align: center;
-        @include m.boton(darken($color: v.$primario, $amount: 30), v.$blanco);
         cursor: pointer;
+        background-color: v.$primario;
     }
 }
 
+//  Propiedades
 .tutores,
 .infantes {
     display: none;
@@ -42,4 +45,25 @@
 
 .visible {
     display: block;
+}
+
+.activo {
+    background-color: darken($color: v.$primario, $amount: 30);
+}
+
+// Categorias de materiales
+.material__clasificacion {
+    margin: 0 0 2rem 0;
+    @include m.grid(3, 2rem);
+    &__boton {
+        @include m.boton(v.$terciario, v.$negro);
+        text-align: center;
+        border-radius: 3rem;
+        color: v.$blanco;
+        margin: 2rem 0 0 0;
+        padding: 1rem;
+        &-activo {
+            background-color: darken($color: v.$primario, $amount: 30);
+        }
+    }
 }
