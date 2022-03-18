@@ -55,13 +55,6 @@
             margin-left: 1rem;
         }
     }
-    &__titulo {
-        text-align: center;
-        @include m.telefono {
-            text-align: left;
-        }
-        color: darken($color: v.$primario, $amount: 30);
-    }
     &__meta {
         font-weight: bold;
         color: darken($color: v.$primario, $amount: 50);

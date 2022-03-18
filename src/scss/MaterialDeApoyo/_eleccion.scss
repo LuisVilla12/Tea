@@ -18,3 +18,28 @@
         cursor: pointer;
     }
 }
+
+.eleccionPC {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    background-color: v.$blanco;
+    &__contenedor {
+        padding: 2rem;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        @include m.boton(darken($color: v.$primario, $amount: 30), v.$blanco);
+        cursor: pointer;
+    }
+}
+
+.tutores,
+.infantes {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
