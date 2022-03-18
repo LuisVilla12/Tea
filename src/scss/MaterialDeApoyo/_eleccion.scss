@@ -20,6 +20,20 @@
     }
 }
 
+.MenuCategoriaMovil {
+    margin: 2rem auto;
+    background-color: v.$primario;
+    text-align: center;
+    color: v.$blanco;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    option {
+        padding: 1rem;
+    }
+}
+
 // vista PC
 .eleccionPC {
     margin-top: 2rem;

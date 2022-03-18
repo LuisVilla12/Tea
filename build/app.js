@@ -41,7 +41,7 @@ function MenuDesplegable() {
         opcion3.href = "Registrarse.html";
 
         opcion.innerHTML = '<i class="fa-solid fa-house"></i>Inicio';
-        opcion1.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>Conocenos';
+        opcion1.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>Conócenos';
         opcion2.innerHTML = '<i class="fa-solid fa-book-open"></i>Material de apoyo';
         opcion3.innerHTML = '<i class="fa-solid fa-user"></i>Registrarse';
 
