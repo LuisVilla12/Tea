@@ -9,9 +9,12 @@
     <link rel="icon" type="image/jpg" href="build/img/ico.ico">
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
+    <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Chela+One&family=Fredoka:wght@300;400;500&family=Lemon&family=Monofett&display=swap" rel="stylesheet">
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                 </li>
 
                 <li>
-                    <a href="" class="nav__a">
+                    <a href="registro.html" class="nav__a">
                         <i class="fa-solid fa-user"></i>Registrarse</a>
                 </li>
 
@@ -76,7 +79,33 @@
     <main>
 
     </main>
+    <!-- <div class="swiper contenedor">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <picture>
+                    <source srcset="build/img/slide_01.avif" type="image/avif">
+                    <source srcset="build/img/slide_01.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/slide_01.jpg" alt="slide 1" class="slider__img">
+                </picture>
 
+            </li>
+            <li class="swiper-slide">
+                <picture>
+                    <source srcset="build/img/slide_02.avif" type="image/avif">
+                    <source srcset="build/img/slide_02.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/slide_02.jpg" alt="slide 1" class="slider__img">
+                </picture>
+            </li>
+            <li class="swiper-slide">
+                <picture>
+                    <source srcset="build/img/slide_03.avif" type="image/avif">
+                    <source srcset="build/img/slide_03.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/slide_03.jpg" alt="slide 1" class="slider__img">
+                </picture>
+            </li>
+        </ul>
+        <div class="slider__paginacion"></div>
+    </div> -->
     <section class="noticias">
         <h2 class="noticias__titulo">Noticias...</h2>
         <div class="contenedor">
@@ -166,7 +195,7 @@
                     </p>
                 </div>
             </div>
-            <div class="novedad">
+            <!-- <div class="novedad">
                 <div class="novedad__mask">
                     <img src="build/img/img3.jpg" alt="" class="novedad__img">
                 </div>
@@ -178,7 +207,7 @@
                         <a href="" class="novedad__enlace">Leer más...</a>
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -231,5 +260,8 @@
 </body>
 <script src="https://kit.fontawesome.com/d2c5d4b6e4.js" crossorigin="anonymous"></script>
 <script src="build/app.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="build/slider.js"></script>
+
 
 </html>
