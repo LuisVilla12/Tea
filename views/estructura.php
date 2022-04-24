@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Chela+One&family=Fredoka:wght@300;400;500&family=Lemon&family=Monofett&display=swap" rel="stylesheet">
     <!-- Slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <div class="header__barra contenedor">
             <div class="header__logo">
                 <img src="build/img/iconoo.png" alt="logotipo" class="header__img">
-                <a href="/Tea/index.html">
+                <a href="/">
                     <p class="header__titulo">
                         TEA <span>PUZZLE</span>
                     </p>
@@ -30,16 +30,13 @@
             </div>
             <ul class="nav">
                 <li>
-                    <a href="conocenos.html" class="nav__a">
+                    <a href="/conocenos" class="nav__a">
                         <i class="fa-solid fa-magnifying-glass"></i>Conócenos</a>
                 </li>
                 <li>
-                    <a href="material_apoyo.html" class="nav__a">
+                    <a href="/materia-de-apoyo" class="nav__a">
                         <i class="fa-solid fa-book-open"></i>Material de apoyo</a>
-                    <!-- <ul>
-                        <li><a href="material_apoyoP.html">Tutores y papás</a></li>
-                        <li><a href="material_apoyoI.html">Infantes</a></li>
-                    </ul> -->
+                    
                 </li>
 
                 <li>
@@ -104,5 +101,7 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/d2c5d4b6e4.js" crossorigin="anonymous"></script>
-<script src="build/app.js"></script>
+<script src="../build/app.js"></script>
+<!-- <script src="../build/eleccionPC.js"></script> -->
+<script src="../build/eleccionMV.js"></script>
 </html>

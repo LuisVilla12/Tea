@@ -14,7 +14,7 @@ class Router {
         session_start();
         // Verifica si inicio sesion
         $auth=$_SESSION['login']?? false;
-        $rutasProtegidas=['/admin','propiedades/crear','/propiedades/actualizar','/propiedades/admin','vendedores/crear','/vendedores/actualizar','/vendedores/admin','/vendedores/eliminar','/propiedades/eliminar'];
+        $rutasProtegidas=[];
 
         // Localiza la ruta
         $urlActual= $_SERVER['PATH_INFO']?? '/';
@@ -55,6 +55,6 @@ class Router {
         include __DIR__ . "/views/$vista.php";
         // Limpia la memoria
         $contenido=ob_get_clean();
-        include __DIR__ . "/views/layout.php";
+        include __DIR__ . "/views/estructura.php";
     }
 }

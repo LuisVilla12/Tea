@@ -2,34 +2,36 @@
 namespace Model;
 class Usuario extends ActiveRecord{
     // Define la tabla
-    protected static $tabla='usuario';
+    protected static $tabla='usuarios';
     // Define los atributos en un arreglo
-    protected static $atributos_DB=['id','idTipoUsuario','nombre','apellidoPat','apellidoMat','telefono','correo','contraseña','token','confirmado'];
+    protected static $atributos_DB=['id','nombre','apellidoPat','apellidoMat','fechaNacimiento','sexo','correo','telefono','contraseña','tipo','token','confirmado'];
 
     public $id;
-    public $idTipoUsuario;
     public $nombre;
     public $apellidoPat;
     public $apellidoMat;
-    public $telefono;
+    public $fechaNacimiento;
+    public $sexo;
     public $correo;
+    public $telefono;
     public $contraseña;
+    public $tipo;
     public $token;
     public $confirmado;
-
     public function __construct($args = []){
         $this->id=$args['id']?? null;
-        $this->idTipoUsuario=$args['idTipoUsuario']?? 1;
         $this->nombre=$args['nombre']?? '';
         $this->apellidoPat=$args['apellidoPat']?? '';        
         $this->apellidoMat=$args['apellidoMat']?? '';        
-        $this->telefono=$args['telefono']?? '';
+        $this->fechaNacimiento=$args['fechaNacimiento']?? '';        
+        $this->sexo=$args['sexo']?? '';        
         $this->correo=$args['correo']?? '';
+        $this->telefono=$args['telefono']?? '';
         $this->contraseña=$args['contraseña']?? '';        
+        $this->tipo=$args['tipo']?? '';        
         $this->token=$args['token']?? '';        
         $this->confirmado=$args['confirmado']?? 0;        
     }
-
     public function validarErrores(){        
         if (!$this->nombre) {
             self::$errores[] = 'Debe ingresar su nombre';
@@ -40,6 +42,12 @@ class Usuario extends ActiveRecord{
         if (!$this->apellidoMat) {
             self::$errores[] = 'Debe ingresar su apellido Materno';
         }
+        if (!$this->fechaNacimiento) {
+            self::$errores[] = 'Debes seleccionar tu fecha de nacimiento';
+        }
+        if (!$this->sexo) {
+            self::$errores[] = 'Debes seleccionar tu sexo';
+        }
         if (!$this->telefono) {
             self::$errores[] = 'Debe ingresar un n° de telefono';
         }
@@ -48,11 +56,9 @@ class Usuario extends ActiveRecord{
         }
         if (!$this->contraseña) {
             self::$errores[] = 'Debe ingresar una contraseña';
-        }
-        
+        }        
         return self::$errores;
-    }
-    
+    }    
     public function existeUsuario() {
         // Revisar si el usuario existe.
         $query = "SELECT * FROM " . self::$tabla . " WHERE correo = '" . $this->correo . "' LIMIT 1";
@@ -87,7 +93,6 @@ class Usuario extends ActiveRecord{
         $usuario = $resultado->fetch_object();
         return $usuario;
     }
-
     public function generarToken(){
         // Genera un id unico
         $this->token=uniqid();

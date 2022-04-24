@@ -11,11 +11,11 @@ const btnHijo = document.querySelector('.eleccion_hijo');
 
 function botones() {
     btnPadre.onclick = function() {
-        document.location.href = "material_apoyo_padre.html";
+        document.location.href = "/materia-de-apoyo-tutor";
         console.log('click en btn padre')
     }
     btnHijo.onclick = function() {
-        document.location.href = "material_apoyo_infante.html";
+        document.location.href = "/materia-de-apoyo-infante";
         console.log('click en btn hijo')
     }
 }
@@ -36,10 +36,10 @@ function MenuDesplegable() {
         const opcion2 = document.createElement('A');
         const opcion3 = document.createElement('A');
 
-        opcion.href = "index.html";
-        opcion1.href = "conocenos.html";
-        opcion2.href = "eleccion__material.html";
-        opcion3.href = "Registrarse.html";
+        opcion.href = "/";
+        opcion1.href = "/conocenos";
+        opcion2.href = "/materia-de-apoyo-mv";
+        opcion3.href = "/login";
 
         opcion.innerHTML = '<i class="fa-solid fa-house"></i>Inicio';
         opcion1.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>Conócenos';
