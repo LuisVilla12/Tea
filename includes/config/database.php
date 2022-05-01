@@ -1,7 +1,7 @@
 <?php 
 // Retornar una conexion
 function conectarDB():mysqli{
-    $db=new mysqli('localhost','tea','qazqazqaz9','bienes_raices','3306');
+    $db=new mysqli('localhost','root','qazqazqaz9','tea','3306');
     if(!$db){
         echo "ERROR";
         exit;

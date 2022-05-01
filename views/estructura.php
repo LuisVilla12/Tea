@@ -1,3 +1,7 @@
+<?php 
+// debuguear($_SESSION);
+$logueado= $_SESSION['logueado']?? 0
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,11 +43,17 @@
                     
                 </li>
 
+                <?php if($logueado):?>
                 <li>
-                    <a href="registro.html" class="nav__a">
+                    <a href="/logout" class="nav__a">
+                        <i class="fa-solid fa-user"></i>Cerrar sesión</a>
+                </li>
+                <?php else:?>
+                <li>
+                    <a href="/login" class="nav__a">
                         <i class="fa-solid fa-user"></i>Registrarse</a>
                 </li>
-
+                <?php endif?>
             </ul>
             <div class="menu">
                 <a href="#">
@@ -102,6 +112,6 @@
 </body>
 <script src="https://kit.fontawesome.com/d2c5d4b6e4.js" crossorigin="anonymous"></script>
 <script src="../build/app.js"></script>
-<!-- <script src="../build/eleccionPC.js"></script> -->
-<script src="../build/eleccionMV.js"></script>
+<!-- <script src="../build/eleccionPC.js" ></script> -->
+<!-- <script src="../build/eleccionMV.js"></script> -->
 </html>

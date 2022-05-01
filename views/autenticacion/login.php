@@ -1,11 +1,13 @@
 <main class="contenedor-max">
     <h1 class="titulo__form">Login</h1>
     <p class="descripcion">Inicia sesión con tus datos</p>
-
-    <form action="/" method="POST" class="formulario">
+    <?php 
+        include_once __DIR__ . '/alertas.php';    
+    ?>
+    <form action="" method="POST" class="formulario">
         <div class="campo">
             <label class="campo__label" for="correo">Correo electronico:</label>
-            <input class="campo__input" type="email" id="correo" placeholder="Ingrese su correo electronico" name="correo"   value="">
+            <input class="campo__input" type="email" id="correo" placeholder="Ingrese su correo electronico" name="correo" >
         </div>
         <div class="campo">
             <label class="campo__label" for="contraseña">Contraseña:</label>

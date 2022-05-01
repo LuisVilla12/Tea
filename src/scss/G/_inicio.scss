@@ -1,0 +1,7 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.inicio {
+    h2 {
+        margin: 1rem 0;
+    }
+}

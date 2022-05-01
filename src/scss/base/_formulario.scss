@@ -99,6 +99,39 @@ form {
     }
 }
 
+.btn {
+    text-align: center;
+    @include m.boton(v.$secundario, v.$negro);
+    margin: 2rem 0;
+    display: block;
+    width: 100%;
+    @include m.tablet {
+        display: inline-block;
+    }
+}
+
+.btn_primario {
+    text-align: center;
+    @include m.boton(v.$secundario, v.$blanco);
+    margin: 2rem 0;
+    display: block;
+    width: 100%;
+    @include m.tablet {
+        display: inline-block;
+    }
+}
+
+.btn_secundario {
+    text-align: center;
+    @include m.boton(v.$verde, v.$negro);
+    margin: 2rem 0;
+    display: block;
+    width: 100%;
+    @include m.tablet {
+        display: inline-block;
+    }
+}
+
 .enviar {
     cursor: pointer;
 }
@@ -111,8 +144,20 @@ form {
     }
 }
 
-.justify {
+.space_between {
     display: flex;
     justify-content: space-between;
     column-gap: 5rem;
+}
+
+.dos_campos {
+    @include m.tablet {
+        @include m.grid(2, 1rem);
+    }
+}
+
+.tres_campos {
+    @include m.tablet {
+        @include m.grid(3, 1rem);
+    }
 }

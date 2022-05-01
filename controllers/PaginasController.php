@@ -2,6 +2,7 @@
 namespace Controllers;
 
 use MVC\Router;
+use Model\Infante;
 
 class PaginasController {
     public static function index(Router $router){
@@ -21,6 +22,13 @@ class PaginasController {
     }
     public static function conocenos(Router $router){
         $router->render('pages/conocenos',[]);
+    }
+    public static function inicio(Router $router){
+        $idTutor=$_SESSION['id'];
+        $infantes=Infante::allId($idTutor);
+        $router->render('agenda/inicio',[
+            'infantes'=>$infantes,
+        ]);
     }
     
     

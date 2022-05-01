@@ -1,10 +1,8 @@
-<?php
+<?php 
 namespace Model;
-class Usuario extends ActiveRecord{
-    // Define la tabla
-    protected static $tabla='usuarios';
-    // Define los atributos en un arreglo
-    protected static $atributos_DB=['id','nombre','apellidoPat','apellidoMat','fechaNacimiento','sexo','correo','telefono','contraseña','tipo','token','confirmado'];
+class Usuario extends ActiveRecord{    
+    protected static $tabla = 'usuarios';
+    protected static $columnasDB=['id','nombre','apellidoPat','apellidoMat','fechaNacimiento','sexo','correo','telefono','contraseña','tipo','token','confirmado'];
 
     public $id;
     public $nombre;
@@ -28,94 +26,82 @@ class Usuario extends ActiveRecord{
         $this->correo=$args['correo']?? '';
         $this->telefono=$args['telefono']?? '';
         $this->contraseña=$args['contraseña']?? '';        
-        $this->tipo=$args['tipo']?? '';        
+        $this->tipo=$args['tipo']?? 0;        
         $this->token=$args['token']?? '';        
         $this->confirmado=$args['confirmado']?? 0;        
     }
-    public function validarErrores(){        
-        if (!$this->nombre) {
-            self::$errores[] = 'Debe ingresar su nombre';
+    // Validar
+    public function validarErrores(){
+        if(!$this->nombre){
+            self::$alertas['error'][]='Ingrese su nombre';
         }
-        if (!$this->apellidoPat) {
-            self::$errores[] = 'Debe ingresar su apellido Paterno';
+        if(!$this->apellidoPat){
+            self::$alertas['error'][]='Ingrese su apellido Paterno';
         }
-        if (!$this->apellidoMat) {
-            self::$errores[] = 'Debe ingresar su apellido Materno';
+        if(!$this->apellidoMat){
+            self::$alertas['error'][]='Ingrese su apellido Materno';
         }
-        if (!$this->fechaNacimiento) {
-            self::$errores[] = 'Debes seleccionar tu fecha de nacimiento';
+        if(!$this->telefono){
+            self::$alertas['error'][]='Ingrese su telefono';
         }
-        if (!$this->sexo) {
-            self::$errores[] = 'Debes seleccionar tu sexo';
+        if(!$this->correo){
+            self::$alertas['error'][]='Ingrese su correo';
         }
-        if (!$this->telefono) {
-            self::$errores[] = 'Debe ingresar un n° de telefono';
+        if($this->sexo===''){
+            self::$alertas['error'][]='Seleccione un sexo';
         }
-        if (!$this->correo) {
-            self::$errores[] = 'Debe ingresar un correo electronico';
+        if(!$this->contraseña){
+            self::$alertas['error'][]='Ingrese su contraseña';
         }
-        if (!$this->contraseña) {
-            self::$errores[] = 'Debe ingresar una contraseña';
-        }        
-        return self::$errores;
-    }    
-    public function existeUsuario() {
-        // Revisar si el usuario existe.
-        $query = "SELECT * FROM " . self::$tabla . " WHERE correo = '" . $this->correo . "' LIMIT 1";
-        $resultado = self::$db->query($query);
-        if(!$resultado->num_rows) {
-            self::$errores[] = 'El Usuario No Existe';
-            return;
+        if(!$this->fechaNacimiento){
+            self::$alertas['error'][]='Seleccione su fecha de nacimiento';
         }
-        return $resultado;
+        if(strlen($this->contraseña)<8){
+            self::$alertas['error'][]='La contraseña debe contar con almenos 9 caracteres';
+        }
+        return self::$alertas;
     }
-    public function validaCoreoRegistrado(){
+      // Revisa si usuario existe
+    public function existeUsuario(){
         $query="SELECT * FROM " . self::$tabla . " WHERE correo = '" .$this->correo . "' LIMIT 1";
         $resultado = self::$db->query($query);
         if($resultado->num_rows){
-            self::$errores[]='El correo ya ha sido registrado';
+            self::$alertas['error'][]='El correo ya ha sido registrado';
         }
         return $resultado;
     }
-
+    public function hashContraseña(){
+        $this->contraseña=password_hash($this->contraseña,PASSWORD_BCRYPT);
+    }
     public function comprobarPassword($contraseña){
         $verifica= password_verify($contraseña,$this->contraseña);
         if(!$verifica){
-            self::$errores[]='La contraseña es incorrecta';
+            self::$alertas['error'][]='La contraseña es incorrecta';
         }else{
             return true;
         }
-    }
-    public function extraerNombre() {
-        // Revisar si el usuario existe.
-        $query = "SELECT nombre FROM " . self::$tabla . " WHERE correo = '" . $this->correo . "' LIMIT 1";
-        $resultado = self::$db->query($query);
-        $usuario = $resultado->fetch_object();
-        return $usuario;
     }
     public function generarToken(){
         // Genera un id unico
         $this->token=uniqid();
     }
-
-    public function cuentaConfirmada(){
-        if($this ->confirmado === '0'){
-            self::$errores[]='Usuario no esta autenticado';
-        }else{
-            return true;
+    public function validarLogin(){
+        if(!$this->correo){
+            self::$alertas['error'][]='Debe ingresar un correo electronico';
         }
+        if(!$this->contraseña){
+            self::$alertas['error'][]='Debe ingresar una contraseña';
+        }
+        // if(strlen($this->contraseña)<8){
+        //     self::$alertas['error'][]='La contraseña debe contar con almenos 9 caracteres';
+        // }
+        return self::$alertas;
     }
-    public static function allEmpleados(){
-        // Query
-        $query = "SELECT * FROM " .  static::$tabla . " WHERE idTipoUsuario = 2";
-        $resultado=self::consultarSQL($query);
-        return $resultado;
-    }
-    public static function allClientes(){
-        // Query
-        $query = "SELECT * FROM " .  static::$tabla . " WHERE idTipoUsuario = 1";
-        $resultado=self::consultarSQL($query);
-        return $resultado;
+    public function validarCorreo(){
+        if(!$this->correo){
+            self::$alertas['error'][]='Debe ingresar un correo electronico';
+        }
+        return self::$alertas;
     }
 }
 ?>  
