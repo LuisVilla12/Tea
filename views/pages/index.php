@@ -31,22 +31,22 @@
     <section class="sabias contenedor">
         <div class="sabias__grid">
             <div class="sabias__info">
-                <h3 class="sabias__titulo">Sabiás que</h3>
+                <h4 class="sabias__titulo">Sabiás que...</h4>
+                <h3 class="sabias__subtitulo">Es un trastorno que comparten muchos genios</h3>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magnam commodi quod nemo reprehenderit explicabo consequatur beatae rem, reiciendis dolore?</p>
+                <div class="centrar">
+                    <a href="" class="conoce__boton">Conoce más</a>
+                </div>
+            </div>
+            <div class="sabias__mask">
+                <img src="" alt="sabias">
             </div>
         </div>
     </section>   
-    
-            <!-- <div class="novedad">
-                <div class="novedad__mask">
-                    <img src="build/img/img3.jpg" alt="" class="novedad__img">
-                </div>
-                <div class="novedad__titulo">
-                    <h3>Interacciones sociales</h3>
-                </div>
-                <div class="novedad__contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum aut corporis cum eaque odit officia dolorem ipsum numquam eveniet.
-                        <a href="" class="novedad__enlace">Leer más...</a>
-                    </p>
-                </div>
-            </div> -->
+
+    <section class="noticias">
+        <img src="build/img/wave.svg" alt="wave">
+        <h3>Noticias</h3>
+
+    </section>
     

@@ -1,9 +1,28 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 .sabias {
+    margin: 3rem auto;
     &__grid {
         @include m.tablet {
             @include m.grid(2, 1fr);
+        }
+    }
+    &__titulo {
+        text-transform: uppercase;
+        color: v.$titulo;
+        font-size: 3.4rem;
+        margin: 2rem 0;
+        text-align: center;
+        @include m.tablet {
+            text-align: left;
+        }
+    }
+    &__subtitulo {
+        color: v.$primario;
+        font-size: 3rem;
+        text-align: center;
+        @include m.tablet {
+            text-align: left;
         }
     }
 }
