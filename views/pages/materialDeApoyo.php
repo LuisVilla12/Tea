@@ -132,3 +132,7 @@
             </div>
         </div>
     </main>
+    
+    <?php 
+        $script="<script src='../build/eleccionPC.js' ></script>"
+    ?>

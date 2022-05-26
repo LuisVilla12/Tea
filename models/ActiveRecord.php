@@ -106,6 +106,8 @@ class ActiveRecord {
     public static function all() {
         $query = "SELECT * FROM " . static::$tabla;
         $resultado = self::consultarSQL($query);
+        // debuguear($query);
+        // exit;
         return $resultado;
     }
     public static function allId($idUsuario) {

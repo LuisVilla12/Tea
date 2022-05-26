@@ -7,7 +7,7 @@
                 <div class="hero__contenido">
                     <h1 class="hero__titulo">El Trastorno del Espectro Autista</h1>
                     <p class="hero__descripcion">"Tener autismo no significa no ser humano, sino ser diferente." Jim. Sinclair,1992.</p>
-                </div>
+                </div>  
             </div>
         </div>
     </section>

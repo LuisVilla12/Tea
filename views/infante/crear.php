@@ -63,13 +63,10 @@
             <input type="hidden" name="idUsuario" value="<?php echo $idTutor?>">
         </div>
     </fieldset>
-    <div class="centrar">
-        <input type="submit" class="btn-enviar" value="Crear cuenta">
+    <div class="space_between">
+        <a href="/inicio" class="btn">Volver al inicio</a>
+        <input type="submit" class="btn-enviar" value="Registrar infante">
     </div>
 </form>
-<div class="space_between">
-    <a href="/">¿Ya tienes una cuenta? inicia sesión</a>
-    <a href="/olvide">¿Olvidaste tu contraseña?</a>
 </div>
-
 </main>

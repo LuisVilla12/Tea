@@ -1,6 +1,7 @@
 <?php 
 // debuguear($_SESSION);
 ?>
+
 <main class="contenedor inicio">
     <h2 class="text-center">Infantes registrados</h1>
     <div class="space_between">
@@ -13,7 +14,7 @@
                 <th>Nombre</th>
                 <th>Genero</th>
                 <th>Edad</th>
-                <th>Acciones</th>
+                <!-- <th>Acciones</th> -->
             </tr>
         </thead>
         <tbody>
@@ -34,4 +35,6 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+    
 </main>
+

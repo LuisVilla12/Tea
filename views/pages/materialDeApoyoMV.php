@@ -10,4 +10,7 @@
             </div>
         </div>
     </main>
-    
+
+<?php 
+    $script="<script src='../build/eleccionMV.js'></script> <script src='../build/menuEleccionMV.js'></script>";
+?>

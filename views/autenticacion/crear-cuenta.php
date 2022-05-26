@@ -1,6 +1,7 @@
 <h1 class="titulo__form">Registrate ahora</h1>
 <p class="descripcion">Contesta el siguiente formulario</p>
 
+
 <main class="contenedor">
 <?php
     include_once __DIR__ . '/alertas.php';
@@ -48,7 +49,7 @@
             </div>
             <div class="campo">
                 <label class="campo__label" for="telefono">Telefono:</label>
-                <input class="campo__input" type="tel" id="telefono" placeholder="Ingrese su telefono" name="telefono"
+                <input class="campo__input" type="number" id="telefono" placeholder="Ingrese su telefono" name="telefono"
                 value="<?php echo sanitizar($usuario->telefono)?>">
             </div>
         </div>

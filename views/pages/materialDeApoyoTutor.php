@@ -82,4 +82,6 @@
             <p>En desarrollo</p>
         </div>
     </main>
-    
+    <?php 
+        $script="<script src='../build/eleccionMV.js'></script>"
+    ?>

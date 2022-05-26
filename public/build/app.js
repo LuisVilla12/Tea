@@ -1,24 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     MenuDesplegable();
-    botones();
+
 });
 //FIXME: .hero era la clase
 const hero = document.querySelector('.menu__hidden');
 const body = document.querySelector('body');
-const btnPadre = document.querySelector('.eleccion_padre');
-const btnHijo = document.querySelector('.eleccion_hijo');
-
-
-function botones() {
-    btnPadre.onclick = function() {
-        document.location.href = "/materia-de-apoyo-tutor";
-        console.log('click en btn padre')
-    }
-    btnHijo.onclick = function() {
-        document.location.href = "/materia-de-apoyo-infante";
-        console.log('click en btn hijo')
-    }
-}
 
 
 function MenuDesplegable() {

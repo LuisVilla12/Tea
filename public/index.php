@@ -1,7 +1,7 @@
 <?php 
 require_once __DIR__ . '/../includes/app.php';
 use MVC\Router;
-// use Controllers\LoginController;
+
 use Controllers\PaginasController;
 use Controllers\LoginController;
 use Controllers\InfanteController;
@@ -26,7 +26,9 @@ $router->get('/materia-de-apoyo-mv',[PaginasController::class,'MDAMV']);
 $router->get('/materia-de-apoyo-infante',[PaginasController::class,'MDAMVI']);
 $router->get('/materia-de-apoyo-tutor',[PaginasController::class,'MDAMVT']);
 $router->get('/conocenos',[PaginasController::class,'conocenos']);
-
+// cita
+$router->get('/cita',[PaginasController::class,'cita']);
+$router->post('/cita',[PaginasController::class,'cita']);
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador

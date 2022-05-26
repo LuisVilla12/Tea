@@ -112,6 +112,7 @@ $logueado= $_SESSION['logueado']?? 0
 </body>
 <script src="https://kit.fontawesome.com/d2c5d4b6e4.js" crossorigin="anonymous"></script>
 <script src="../build/app.js"></script>
+<?php echo $script?? '';?>
 <!-- <script src="../build/eleccionPC.js" ></script> -->
 <!-- <script src="../build/eleccionMV.js"></script> -->
 </html>
