@@ -1,0 +1,9 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+.sabias {
+    &__grid {
+        @include m.tablet {
+            @include m.grid(2, 1fr);
+        }
+    }
+}
