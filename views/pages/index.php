@@ -35,7 +35,7 @@
                 <h3 class="sabias__subtitulo">Es un trastorno que comparten muchos genios</h3>
                 <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magnam commodi quod nemo reprehenderit explicabo consequatur beatae rem, reiciendis dolore?</p>
                 <div class="centrar">
-                    <a href="" class="conoce__boton">Conoce más</a>
+                    <a href="/sabias" class="conoce__boton">Conoce más</a>
                 </div>
             </div>
             <div class="sabias__mask">

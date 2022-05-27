@@ -41,8 +41,7 @@ $logueado= $_SESSION['logueado']?? 0
                     <a href="/materia-de-apoyo" class="nav__a">
                         <i class="fa-solid fa-book-open"></i>Material de apoyo</a>
                     
-                </li>
-
+                </li>                                
                 <?php if($logueado):?>
                 <li>
                     <a href="/logout" class="nav__a">
@@ -54,6 +53,12 @@ $logueado= $_SESSION['logueado']?? 0
                         <i class="fa-solid fa-user"></i>Registrarse</a>
                 </li>
                 <?php endif?>
+                <li>   
+                    <img class="nav__img" src="/build/img/LogoITSX.png" alt="">
+                </li>
+                <li>
+                    <img class="nav__img" src="/build/img/LogoUV.png" alt="">
+                </li>
             </ul>
             <div class="menu">
                 <a href="#">

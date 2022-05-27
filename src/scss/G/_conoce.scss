@@ -6,7 +6,7 @@
         display: grid;
         @include m.tablet {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 15rem);
         }
     }
     &__mask {

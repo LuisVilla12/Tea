@@ -25,6 +25,9 @@ class PaginasController {
     public static function conocenos(Router $router){
         $router->render('pages/conocenos',[]);
     }
+    public static function sabias(Router $router){
+        $router->render('pages/sabias',[]);
+    }
     public static function cita(Router $router){
         $alertas=[];
         $cita = new Cita();
@@ -64,8 +67,7 @@ class PaginasController {
             'horarios'=>$horarios
         ]);
     }
-    public static function inicio(Router $router){
-        
+    public static function inicio(Router $router){        
         $idTutor=$_SESSION['id'];
         $infantes=Infante::allId($idTutor);
         $router->render('agenda/inicio',[
