@@ -54,10 +54,10 @@ $logueado= $_SESSION['logueado']?? 0
                 </li>
                 <?php endif?>
                 <li>   
-                    <img class="nav__img" src="/build/img/LogoITSX.png" alt="">
+                    <img class="nav__img none" src="/build/img/LogoITSX.png" alt="" non>
                 </li>
                 <li>
-                    <img class="nav__img" src="/build/img/LogoUV.png" alt="">
+                    <img class="nav__img none" src="/build/img/LogoUV.png" alt="">
                 </li>
             </ul>
             <div class="menu">

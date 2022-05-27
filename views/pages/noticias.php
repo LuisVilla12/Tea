@@ -63,7 +63,7 @@
                 <a class="btn" href="https://www.bbc.com/mundo/noticias-61076259">Leer más</a>
                 </div>                
             </section>
-            <section class="noticia">
+        <section class="noticia">
                 <h1>15 de abril: Joven con autismo desaparece en California y lo encuentran tres años después en Park City</h1>
                 <div class="noticia__mask">
                 <img src="/build/img/16abril.jpg">
@@ -72,7 +72,7 @@
                 <div class="centrar">
                 <a class="btn" href="https://www.univision.com/local/salt-lake-city-kuth/connerjack-oswalt-chico-autismo-desaparecido-2019-encontrado-utah">Leer más</a>
                 </div>                
-            </section> 
+        </section> 
             <section class="noticia">
                 <h1>16 de abril: Universidad Estatal de Arizona ofrece nuevos recursos para estudiantes en el espectro autista</h1>
                 <div class="noticia__mask">
@@ -119,7 +119,9 @@
                     <img src="/build/img/19abril.jpg">
                 </div>
                 <p>La actriz tuvo que recurrir a psiquiatras y psicólogos para salir adelante tras enterarse de la discapacidad cognitiva de Santiago. Luz Elena González sufrió la discriminación contra su hijo y otros problemas, pero decidió "estar bien" para poder ocuparse de construir un mejor futuro para el pequeño.</p>
+                <div class="centrar">
                 <a class="btn" href="https://www.univision.com/famosos/luz-elena-gonzalez-hijo-autismo-depresion-fotos">Leer más</a>
+                </div>                
             </section>
             <section class="noticia">
                 <h1>22 de abril: Conciencia e inclusión</h1>
