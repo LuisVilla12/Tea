@@ -1,7 +1,5 @@
-<h1 class="titulo__form">Registrate ahora</h1>
+<h1 class="titulo__login">Registrate ahora</h1>
 <p class="descripcion">Contesta el siguiente formulario</p>
-
-
 <main class="contenedor">
 <?php
     include_once __DIR__ . '/alertas.php';
@@ -9,12 +7,12 @@
 <form action="/crear-cuenta" method="POST" class="formulario">
     <fieldset>
         <legend>Datos generales</legend>
-        <div class="campo">
-            <label class="campo__label" for="nombre">Nombre:</label>
-            <input class="campo__input" type="text" id="nombre" placeholder="Ingrese su nombre" name="nombre" 
-            value="<?php echo sanitizar($usuario->nombre)?>">
-        </div>
-        <div class="dos_campos">
+        <div class="tres_campos">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre:</label>
+                <input class="campo__input" type="text" id="nombre" placeholder="Ingrese su nombre" name="nombre" 
+                value="<?php echo sanitizar($usuario->nombre)?>">
+            </div>
             <div class="campo">
                 <label class="campo__label" for="apellidoPat">Apellido Paterno:</label>
                 <input class="campo__input" type="text" id="apellidoPat" placeholder="Ingrese su apellido paterno" name="apellidoPat" value="<?php echo sanitizar($usuario->apellidoPat)?>">
@@ -43,12 +41,12 @@
         <legend>Datos de contacto</legend>
         <div class="dos_campos">
             <div class="campo">
-                <label class="campo__label" for="correo">Correo electronico:</label>
+                <label class="campo__label" for="correo">Correo electrónico:</label>
                 <input class="campo__input" type="email" id="correo" placeholder="Ingrese su correo electronico" name="correo"
                 value="<?php echo sanitizar($usuario->correo)?>">
             </div>
             <div class="campo">
-                <label class="campo__label" for="telefono">Telefono:</label>
+                <label class="campo__label" for="telefono">Teléfono:</label>
                 <input class="campo__input" type="number" id="telefono" placeholder="Ingrese su telefono" name="telefono"
                 value="<?php echo sanitizar($usuario->telefono)?>">
             </div>
@@ -71,8 +69,8 @@
         <input type="submit" class="btn-enviar" value="Crear cuenta">
     </div>
 </form>
-<div class="space_between">
-    <a href="/">¿Ya tienes una cuenta? inicia sesión</a>
-    <a href="/olvide">¿Olvidaste tu contraseña?</a>
+<div class="space_between mg-3">
+    <a href="/crear-cuenta">¿Ya tienes una cuenta? inicia sesión</a>
+    <!-- <a href="/olvide">¿Olvidaste tu contraseña?</a> -->
 </div>
 </main>

@@ -75,6 +75,9 @@ form {
         background-color: v.$secundario;
         border: none;
         border-radius: 1rem;
+        &::placeholder {
+            color: v.$negro;
+        }
     }
     &__radios {
         display: flex;
@@ -160,4 +163,8 @@ form {
     @include m.tablet {
         @include m.grid(3, 1rem);
     }
+}
+
+.mg-3 {
+    margin: 2rem 0;
 }

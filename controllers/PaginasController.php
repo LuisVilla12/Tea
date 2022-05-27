@@ -28,6 +28,9 @@ class PaginasController {
     public static function sabias(Router $router){
         $router->render('pages/sabias',[]);
     }
+    public static function noticias(Router $router){
+        $router->render('pages/noticias',[]);
+    }
     public static function cita(Router $router){
         $alertas=[];
         $cita = new Cita();

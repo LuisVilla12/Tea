@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.titulo__login {
+    text-transform: uppercase;
+    color: v.$titulo;
+    font-size: 4rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.btn-enviar {
+    border-radius: 2rem;
+    font-weight: 400;
+    background-color: v.$botones;
+}

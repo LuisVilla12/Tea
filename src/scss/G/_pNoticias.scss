@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.noticias {
+    &__titulo {
+        text-transform: uppercase;
+        color: v.$titulo;
+        font-size: 4rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    &__grid {
+        @include m.grid(2, 3rem);
+    }
+}
+
+.noticia {
+    h1 {
+        color: v.$titulo;
+        text-align: center;
+    }
+    &__mask {
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: all .3s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    p {
+        text-align: justify;
+    }
+    &__btn {
+        @include m.boton(v.$azul, v.$blanco);
+        padding: 1.5rem 2rem;
+        border-radius: 2rem;
+    }
+    // &:nth-of-type(1) {
+    //     // grid-column: 1/3;
+    // }
+}

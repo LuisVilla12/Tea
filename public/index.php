@@ -27,6 +27,7 @@ $router->get('/materia-de-apoyo-infante',[PaginasController::class,'MDAMVI']);
 $router->get('/materia-de-apoyo-tutor',[PaginasController::class,'MDAMVT']);
 $router->get('/conocenos',[PaginasController::class,'conocenos']);
 $router->get('/sabias',[PaginasController::class,'sabias']);
+$router->get('/noticias',[PaginasController::class,'noticias']);
 // cita
 $router->get('/cita',[PaginasController::class,'cita']);
 $router->post('/cita',[PaginasController::class,'cita']);

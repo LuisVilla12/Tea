@@ -3,9 +3,10 @@
 ?>
 
 <main class="contenedor inicio">
-    <h2 class="text-center">Infantes registrados</h1>
+    <h2 class="text-center titulo__login">Infantes registrados</h1>
     <div class="space_between">
         <a href="/registrar-infante" class="btn_primario">Registrar infante</a>
+        
         <a href="/cita" class="btn_secundario">Agendar cita</a>
     </div>    
     <table class="lista">
@@ -14,7 +15,7 @@
                 <th>Nombre</th>
                 <th>Genero</th>
                 <th>Edad</th>
-                <!-- <th>Acciones</th> -->
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
