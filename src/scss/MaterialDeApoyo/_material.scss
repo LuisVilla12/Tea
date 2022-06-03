@@ -2,9 +2,11 @@
 @use 'base/mixins' as m;
 .materiales {
     &__titulo {
-        text-align: center;
-        margin: 2rem auto;
-        color: darkblue;
+        text-transform: uppercase;
+        color: v.$titulo;
+        font-size: 3.4rem;
+        margin: 2rem 0;
+        text-align: centerj;
     }
 }
 

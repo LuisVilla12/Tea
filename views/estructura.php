@@ -44,6 +44,10 @@ $logueado= $_SESSION['logueado']?? 0
                 </li>                                
                 <?php if($logueado):?>
                 <li>
+                    <a href="/inicio" class="nav__a">
+                    <i class="fa-solid fa-house"></i>Inicio</a>
+                </li>                    
+                <li>
                     <a href="/logout" class="nav__a">
                         <i class="fa-solid fa-user"></i>Cerrar sesión</a>
                 </li>

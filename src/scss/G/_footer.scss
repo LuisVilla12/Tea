@@ -14,6 +14,9 @@
 }
 
 .ubicacion {
+    h3 {
+        color: v.$blanco;
+    }
     @include m.tablet {
         grid-column: 1/4;
     }

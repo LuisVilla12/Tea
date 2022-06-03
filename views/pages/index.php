@@ -5,8 +5,7 @@
                     <img src="build/img/Logo.png" alt="logo" class="hero__img">
                 </div>
                 <div class="hero__contenido">
-                    <h1 class="hero__titulo">El Trastorno del Espectro Autista</h1>
-                    <p class="hero__descripcion">"Tener autismo no significa no ser humano, sino ser diferente." Jim. Sinclair,1992.</p>
+                    <h1 class="hero__titulo">El Trastorno del Espectro Autista</h1>                    
                 </div>  
             </div>
         </div>
@@ -14,13 +13,13 @@
     <section class="conoce contenedor">
         <div class="conoce__grid">
             <div class="conoce__mask">
-                <img src="" alt="mask">
+                <img src="build/img/hola.jpg" alt="mask">
             </div>
             <div class="conoce__titulo">
                 <h3>Autismo lo que necesitas conocer.</h3>
             </div>
             <div class="conoce__descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis dolorum suscipit quasi nisi officiis nobis exercitationem voluptatum culpa laboriosam.</p>
+                <p>Los trastornos del espectro autista (TEA), comúnmente llamados "autismo", son un grupo de desordenes complejos del desarrollo. Se caracterizan por dificultades en la interacción social y la comunicación.</p>
                 <div class="centrar">
                     <a href="" class="conoce__boton">Conoce más</a>
                 </div>
@@ -33,13 +32,13 @@
             <div class="sabias__info">
                 <h4 class="sabias__titulo">Sabiás que...</h4>
                 <h3 class="sabias__subtitulo">Es un trastorno que comparten muchos genios</h3>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magnam commodi quod nemo reprehenderit explicabo consequatur beatae rem, reiciendis dolore?</p>
+                <p class="">Es un trastorno que compartes muchos genios Celebridades como Woody Allen, Michael Jackson  Bill Gates y Stanley Kubrick son algunos de ellos.</p>
                 <div class="centrar">
                     <a href="/sabias" class="conoce__boton">Conoce más</a>
                 </div>
             </div>
             <div class="sabias__mask">
-                <img src="" alt="sabias">
+                <img src="build/img/hola2.jpg" alt="sabias">
             </div>
         </div>
     </section>   
@@ -69,7 +68,7 @@
             <a class="btn" href="https://autismodiario.com/2021/07/18/autismo-cuando-el-agresor-es-el-estado-el-culpable-eres-tu/">Leer más</a>            
             </div>
         </section>
-        <section class="noticia">
+        <!-- <section class="noticia">
             <h1>2 DE ABRIL: DÍA MUNDIAL DEL AUTISMO</h1>
             <div class="noticia__mask">
             <img src="/build/img/portada1.jpg">
@@ -79,8 +78,10 @@
             <div class="centrar">            
             <a class="btn" href="https://teleton.org/que-es-el-autismo/?gclid=CjwKCAiA9tyQBhAIEiwA6tdCrNBZXl3BPHUPe7la6_jgX5jUNTD46tn2XSJxp7JkEE0WQnRIlojjthoCifcQAvD_BwE">Leer más</a>
             </div>
-        </section>                
+        </section>                 -->
     </div>
-
+    <div class="centrar">
+    <a class="btn" href="/noticias">Ver más noticias</a>
+    </div>
     </section>
     
