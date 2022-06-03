@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.subtitulo{
+    padding: 1rem 0;
+    h3{
+        color: v.$blanco;
+    }
+    &.uno{ 
+        background-color: #FCB424;
+    }
+    &.dos{
+        background-color: #EA4B8B;
+    }
+    &.tres{
+        background-color: #63C5EA;
+    }
+    &.cuatro{
+        background-color: #7F59B0;
+    }
+    &.cinco{
+        background-color: #9b8ab0;
+    }
+}
+.integrantes{
+    &__grid{
+        @include m.grid(2,3rem);
+    }
+    p{
+        background-color: #FFF4E6;
+        margin: 0;
+        padding: 1rem;
+        color: #27798F;
+        font-size: 2rem;
+    }
+    .miembros{
+        text-align: justify;
+        background-color: v.$blanco;
+    }
+}
+.ultimo{
+    margin-top: 2rem;
+}

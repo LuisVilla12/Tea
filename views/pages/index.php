@@ -1,31 +1,23 @@
-<section class="hero">
-        <div class="contenedor">
-            <div class="hero__grid ">
-                <div class="hero__logo">
-                    <img src="build/img/Logo.png" alt="logo" class="hero__img">
-                </div>
-                <div class="hero__contenido">
-                    <h1 class="hero__titulo">El Trastorno del Espectro Autista</h1>                    
-                </div>  
-            </div>
-        </div>
-    </section>
-    <section class="conoce contenedor">
+    <section class="conoce"> 
         <div class="conoce__grid">
+            <div class="conoce__logo">
+                <img src="build/img/Logo.png" alt="logo" class="conoce__img">
+            </div>
             <div class="conoce__mask">
-                <img src="build/img/hola.jpg" alt="mask">
+                <img src="build/img/hola.jpg" alt="mask" class="conoce__foto">
             </div>
             <div class="conoce__titulo">
-                <h3>Autismo lo que necesitas conocer.</h3>
+                <h2>Autismo lo que necesitas conocer.</h2>
             </div>
             <div class="conoce__descripcion">
                 <p>Los trastornos del espectro autista (TEA), comúnmente llamados "autismo", son un grupo de desordenes complejos del desarrollo. Se caracterizan por dificultades en la interacción social y la comunicación.</p>
                 <div class="centrar">
                     <a href="" class="conoce__boton">Conoce más</a>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
+
 
     <section class="sabias contenedor">
         <div class="sabias__grid">
