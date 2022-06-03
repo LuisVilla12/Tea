@@ -21,6 +21,10 @@ $router->get('/logout',[LoginController::class,'logout']);
 $router->get('/inicio',[PaginasController::class,'inicio']);
 $router->get('/registrar-infante',[InfanteController::class,'registrar_infante']);
 $router->post('/registrar-infante',[InfanteController::class,'registrar_infante']);
+$router->get('/infantes/administrador',[InfanteController::class,'gestion']);
+$router->get('/infantes/actualizar',[InfanteController::class,'actualizar']);
+$router->post('/infantes/actualizar',[InfanteController::class,'actualizar']);
+$router->post('/infantes/eliminar',[InfanteController::class,'eliminar']);
 
 // Admin
 $router->get('/admin',[AdminController::class,'index']);

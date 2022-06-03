@@ -2,7 +2,7 @@
 namespace Model;
 class Infante extends ActiveRecord{    
     protected static $tabla = 'infante';
-    protected static $columnasDB=['id','nombre','apellidoPat','apellidoMat','fechaNacimiento','sexo','idUsuario','altura','peso','estudia'];
+    protected static $columnasDB=['id','nombre','apellidoPat','apellidoMat','fechaNacimiento','sexo','idUsuario','altura','peso','estudia','estatus'];
 
     public $id;
     public $nombre;
@@ -14,6 +14,8 @@ class Infante extends ActiveRecord{
     public $altura;
     public $peso;
     public $estudia;
+    public $estatus;
+
     public function __construct($args = []){
         $this->id=$args['id']?? null;
         $this->nombre=$args['nombre']?? '';
@@ -25,6 +27,7 @@ class Infante extends ActiveRecord{
         $this->altura=$args['altura']?? '';        
         $this->peso=$args['peso']?? '';        
         $this->estudia=$args['estudia']?? '';        
+        $this->estatus=$args['estatus']?? 0;        
     }
     // Validar
     public function validarErrores(){
@@ -63,5 +66,10 @@ class Infante extends ActiveRecord{
         }
         return $resultado;
     }    
+    public static function cancelar($id) {
+        $query = "UPDATE " .  static::$tabla . " SET estatus=0  WHERE id=" . $id;        
+        $resultado = self::$db->query($query);        
+        return $resultado;
+    }
 }
 ?>  

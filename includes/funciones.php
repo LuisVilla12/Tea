@@ -63,3 +63,22 @@ function validarORediredireccionar($url){
     }
     return $id;
 }
+
+function getAge ($fecha){
+    //Creamos objeto fecha desde los valores recibidos
+    // $nacio = DateTime::createFromFormat('Y-m-d', $fecha);
+    //Calculamos usando diff y la fecha actual
+    // $fecha=$fecha0);
+    $nacimiento = new DateTime($fecha);
+    $ahora = new DateTime(date("Y-m-d"));
+    // $fechaActual=date("Y-m-d");
+    // $days_last = date_diff($fecha, $fechaActual);
+    $diferencia = $ahora->diff($nacimiento);
+    $anos=$diferencia->format("%y");
+    // if($anos>=18){
+    //     return true;  
+    // }else{
+    //     return false;
+    // }
+    return $anos;
+}
