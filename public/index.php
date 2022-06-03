@@ -5,6 +5,7 @@ use MVC\Router;
 use Controllers\PaginasController;
 use Controllers\LoginController;
 use Controllers\InfanteController;
+use Controllers\NoticiasController;
 $router = new Router();
 // Iniciar sesión
 $router->get('/login',[LoginController::class,'login']);
@@ -19,6 +20,9 @@ $router->get('/logout',[LoginController::class,'logout']);
 $router->get('/inicio',[PaginasController::class,'inicio']);
 $router->get('/registrar-infante',[InfanteController::class,'registrar_infante']);
 $router->post('/registrar-infante',[InfanteController::class,'registrar_infante']);
+
+// Noticia
+$router->get('/noticias',[NoticiasController::class,'index']);
 // Publica
 $router->get('/',[PaginasController::class,'index']);
 $router->get('/materia-de-apoyo',[PaginasController::class,'MDAPC']);
@@ -27,7 +31,7 @@ $router->get('/materia-de-apoyo-infante',[PaginasController::class,'MDAMVI']);
 $router->get('/materia-de-apoyo-tutor',[PaginasController::class,'MDAMVT']);
 $router->get('/conocenos',[PaginasController::class,'conocenos']);
 $router->get('/sabias',[PaginasController::class,'sabias']);
-$router->get('/noticias',[PaginasController::class,'noticias']);
+// $router->get('/noticias',[PaginasController::class,'noticias']);
 // cita
 $router->get('/cita',[PaginasController::class,'cita']);
 $router->post('/cita',[PaginasController::class,'cita']);
