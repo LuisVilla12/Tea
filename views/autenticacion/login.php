@@ -1,7 +1,4 @@
 <main class="contenedor-min">
-    <?php 
-        include_once __DIR__ . '/alertas.php';    
-        ?>
     <div class="login">
         <div class="login__grid contenedor">
             <div class="login__seccion1"></div>
@@ -17,9 +14,13 @@
                             <!-- <label class="campo__label" for="contraseña">Contraseña:</label> -->
                             <input class="campo__input" type="password" id="contraseña" placeholder="Contraseña" name="contraseña">
                         </div>
+                        <?php 
+                            include_once __DIR__ . '/alertas.php';    
+                        ?>
                         <div class="centrar">
                             <input type="submit" class="btn-enviar" value="Iniciar sesión">
                         </div>
+                        
                         <div class="acciones">
                             <a href="/crear-cuenta">¿Aún no tienes una cuenta? 
                                 <span> Crear una aquí</span></a>

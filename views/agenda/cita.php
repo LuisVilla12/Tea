@@ -1,8 +1,11 @@
+
 <?php 
 $id_tutor=$_SESSION['id'];
 ?>
+<div class="recuadro__form">
+    <p>Registrate ahora</p>
+</div>
 <main class="contenedor">
-    <h2 class="text-center"> Registrar cita</h2>
     <form action="/cita" method="POST" class="formulario">
         <fieldset>
         <legend>Datos del infante</legend>

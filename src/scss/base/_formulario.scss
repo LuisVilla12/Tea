@@ -39,7 +39,8 @@ form {
         color: darken($color: v.$secundario, $amount: 70);
     }
     fieldset {
-        border: .2rem solid v.$primario;
+        // border: .2rem solid v.$primario;
+        border: none;
         margin-bottom: 1.5rem;
         &:last-of-type {
             margin-bottom: 0;

@@ -11,8 +11,19 @@
 }
 .recuadro__form{
     display: inline-block;
-    background-color: #F9B14A;
+    width: auto;
     p{
+        padding:2rem 9rem ;
+        background-color: #F9B14A;
         display: inline-block;
+        text-transform: uppercase;
+        color: v.$blanco;
+        font-weight: bold;
+        font-size: 3rem;
     }
+}
+.formulario{
+    border: .2rem solid #606060;
+    padding: 2rem 1rem 0 1rem;
+    margin: 1rem 0 2rem 0;
 }
