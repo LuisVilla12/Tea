@@ -18,7 +18,7 @@ class Noticia extends ActiveRecord{
         $this->autor=$args['autor']?? '';        
         $this->fecha=$args['fecha']?? '';        
         $this->descripcion=$args['descripcion']?? '';        
-        $this->urlImagen=$args['urlImagen']?? '';        
+        $this->urlImagen=$args['urlImagen']?? 'imagen.jpg';        
         $this->url=$args['url']?? '';              
         $this->fuente=$args['fuente']?? '';              
     }
@@ -27,24 +27,25 @@ class Noticia extends ActiveRecord{
         if(!$this->titulo){
             self::$alertas['error'][]='Debe ingresar un titulo';
         }
+        if(!$this->fuente){
+            self::$alertas['error'][]='Debe ingresar la fuente';
+        }
         if(!$this->autor){
             self::$alertas['error'][]='Debe ingresar un autor';
         }
         if(!$this->fecha){
             self::$alertas['error'][]='Debe ingresar una fecha';
         }
-        if($this->fuente){
-            self::$alertas['error'][]='Debe ingresar la fuente';
+        if(!$this->url){
+            self::$alertas['error'][]='Debe ingresar la url';
         }
-        if($this->urlImagen){
+        if(!$this->urlImagen){
             self::$alertas['error'][]='Debe ingresar una imagen';
         }        
         if(!$this->descripcion){
             self::$alertas['error'][]='Debe ingresar una breve descripcion';
         }
-        if($this->url){
-            self::$alertas['error'][]='Debe ingresar la url';
-        }
+       
         return self::$alertas;
     }
 }

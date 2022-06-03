@@ -1,7 +1,8 @@
 <?php 
 require_once __DIR__ . '/../includes/app.php';
-use MVC\Router;
 
+use MVC\Router;
+use Controllers\AdminController;
 use Controllers\PaginasController;
 use Controllers\LoginController;
 use Controllers\InfanteController;
@@ -21,8 +22,17 @@ $router->get('/inicio',[PaginasController::class,'inicio']);
 $router->get('/registrar-infante',[InfanteController::class,'registrar_infante']);
 $router->post('/registrar-infante',[InfanteController::class,'registrar_infante']);
 
+// Admin
+$router->get('/admin',[AdminController::class,'index']);
 // Noticia
 $router->get('/noticias',[NoticiasController::class,'index']);
+$router->get('/noticias/administrador',[NoticiasController::class,'gestion']);
+$router->get('/noticias/crear',[NoticiasController::class,'crear']);
+$router->post('/noticias/crear',[NoticiasController::class,'crear']);
+$router->get('/noticias/actualizar',[NoticiasController::class,'actualizar']);
+$router->post('/noticias/actualizar',[NoticiasController::class,'actualizar']);
+$router->post('/noticias/eliminar',[NoticiasController::class,'eliminar']);
+
 // Publica
 $router->get('/',[PaginasController::class,'index']);
 $router->get('/materia-de-apoyo',[PaginasController::class,'MDAPC']);

@@ -1,12 +1,13 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 .noticias {
+    margin: 3rem auto;
     &__grid{
         @include m.tablet {
-            @include m.grid(2,1rem);
+            @include m.grid(2,2rem);
         }
         @include m.desktop {
-            @include m.grid(3,1rem);
+            @include m.grid(3,3rem);
         }
     }
 }
@@ -24,7 +25,7 @@
     }
     @include m.desktop {
         &:nth-of-type(1){
-            @include m.grid(3,1rem);
+            @include m.grid(3,2rem);
             grid-column: 1/4;
         }   
     }
@@ -44,5 +45,23 @@
     }
     &__btn{
         @include m.boton(v.$botones,v.$blanco);
+    }
+    &__meta{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        p{
+            margin: 0;
+        }
+    }
+    &__fuente,&__fecha{
+        span{
+            color: v.$botones;
+            font-weight: bold;
+        }
+    }
+    &__descripcion{
+        text-align: justify;
+        margin: 0;
     }
 }

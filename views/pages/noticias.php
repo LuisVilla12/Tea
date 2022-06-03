@@ -102,7 +102,7 @@
                 <img src="/build/img/16abril.jpg">
             </div>
             <div class="notice__contenido">
-                <h2>15 de abril: Joven con autismo desaparece en California y lo encuentran tres años después en Park City</h2>
+                <h2>Joven con autismo desaparece en California y lo encuentran tres años después en Park City</h2>
                 <p>Connerjack Oswalt, un chico con autismo de 19 años desaparecido en 2019 en Clearlake, California, fue encontrado a salvo la semana pasada en Park City, Utah.</p>
                 <div class="centrar">
                 <a class="notice__btn" href="https://www.univision.com/local/salt-lake-city-kuth/connerjack-oswalt-chico-autismo-desaparecido-2019-encontrado-utah">Leer más</a>
@@ -114,7 +114,7 @@
                     <img src="/build/img/15abril.jpg">
                 </div>
                 <div class="notice__contenido">
-                    <h2>16 de abril: Universidad Estatal de Arizona ofrece nuevos recursos para estudiantes en el espectro autista</h2>
+                    <h2> Universidad Estatal de Arizona ofrece nuevos recursos para estudiantes en el espectro autista</h2>
                     <p>El nuevo programa ofrece ayuda a estudiantes en el espectro autista que desean avanzar en su camino profesional. Estudiantes voluntarios de la Universidad Estatal de Arizona ayudan a los participantes a mejorar sus habilidades sociales y técnicas de estudio.</p>
                     <div class="centrar">
                     <a class="notice__btn" href="https://www.univision.com/local/arizona-ktvw/universidad-estatal-de-arizona-ofrece-nuevos-recursos-para-estudiantes-en-el-espectro-autista-video">Leer más</a>
@@ -126,7 +126,7 @@
                     <img src="/build/img/17abril.jpg">
                 </div>
                 <div class="notice__contenido">
-                    <h2>17 de abril: “Un niño autista ha sido agredido por un jugador de fútbol”, disculpas de Cristiano Ronaldo no son suficientes</h2>
+                    <h2>Un niño autista ha sido agredido por un jugador de fútbol”, disculpas de Cristiano Ronaldo no son suficientes</h2>
                     <p>Cristiano Ronaldo protagonizó uno de los peores hechos de su carrera, luego de que, tras perder ante el Everton un gol a cero, golpeara a un niño para tirar el celular con el que grababa la salida del Manchester United de las canchas.</p>
                     <div class="centrar">
                     <a class="notice__btn" href="https://www.independentespanol.com/deportes/cristiano-ronaldo-nino-autista-partido-b2059838.html">Leer más</a>
@@ -138,7 +138,7 @@
                     <img src="/build/img/18abril.jpg">
                 </div>
                 <div class="notice__contenido">
-                    <h2>18 de abril: Un madre de Georgia cuenta cómo se dio cuenta de que su hijo tenía autismo</h2>
+                    <h2>Un madre de Georgia cuenta cómo se dio cuenta de que su hijo tenía autismo</h2>
                     <p>Maira Umbacia habló con Andrés Quiñones sobre la forma en la que se dio cuenta que su hijo tenía autismo y lo que hizo su familia tras recibir ese diagnóstico.</p>
                     <div class="centrar">
                     <a class="notice__btn" href="https://www.independentespanol.com/deportes/cristiano-ronaldo-nino-autista-partido-b2059838.html">Leer más</a>
@@ -150,7 +150,7 @@
                     <img src="/build/img/20abril.jpg">
                 </div>
                 <div class="notice__contenido">
-                    <h2>19 de abril: Piden a gobiernos mejores oportunidades para personas con autismo</h2>
+                    <h2> Piden a gobiernos mejores oportunidades para personas con autismo</h2>
                     <p> En el Día Mundial de Concienciación sobre el Autismo, que se conmemora hoy, la Comisión Nacional de los Derechos Humanos (CNDH) llamó a los tres poderes y órdenes de gobierno del país a adoptar medidas para que niñas, niños, jóvenes y adultos con autismo accedan a mejores oportunidades y a una vida autónoma e independiente en y con su comunidad.</p>
                     <div class="centrar">
                     <a class="notice__btn" href="https://www.jornada.com.mx/notas/2022/04/02/sociedad/piden-a-gobiernos-mejores-oportunidades-para-personas-con-autismo/">Leer más</a>
@@ -162,7 +162,7 @@
                     <img src="/build/img/19abril.jpg">
                 </div>
                 <div class="notice__contenido">
-                    <h2>20 de abril: Luz Elena González tuvo una dura depresión cuando supo que su hijo era autista</h2>
+                    <h2>Luz Elena González tuvo una dura depresión cuando supo que su hijo era autista</h2>
                     <p>La actriz tuvo que recurrir a psiquiatras y psicólogos para salir adelante tras enterarse de la discapacidad cognitiva de Santiago. Luz Elena González sufrió la discriminación contra su hijo y otros problemas, pero decidió "estar bien" para poder ocuparse de construir un mejor futuro para el pequeño.</p>
                     <div class="centrar">
                     <a class="notice__btn" href="https://www.univision.com/famosos/luz-elena-gonzalez-hijo-autismo-depresion-fotos">Leer más</a>
@@ -174,7 +174,7 @@
                     <img src="/build/img/22abril.jpg">
                 </div>
                 <div class="notice__contenido">
-                    <h2>22 de abril: Conciencia e inclusión</h2>
+                    <h2> Conciencia e inclusión</h2>
                     <p>Cada 2 de abril se conmemora el "Día mundial de concienciación sobre el TEA" con el objetivo precisamente de sensibilizar acerca de la necesidad de fortalecer el proceso de inclusión de las personas con esta condición.</p>
                     <div class="centrar">
                     <a class="notice__btn" href="https://senadis.gov.py/index.php/noticias/conciencia-e-inclusion">Leer más</a>
@@ -186,7 +186,7 @@
                     <img src="/build/img/23abril.jpg">
                 </div>
                 <div class="notice__contenido">
-                    <h2>23 de abril: MSP contribuye a la inserción escolar de niños con autismo en el Ecuador</h2>
+                    <h2> MSP contribuye a la inserción escolar de niños con autismo en el Ecuador</h2>
                     <p>En todo el mundo, uno de cada 160 niños tiene un trastorno del espectro autista (TEA). Esta condición puede influir en el ámbito educativo e incidir en las oportunidades de desarrollo social y personal de quien vive con esta condición.</p>
                     <div class="centrar">
                         <a class="notice__btn" href="https://www.salud.gob.ec/msp-contribuye-a-la-insercion-escolar-de-ninos-con-autismo-en-el-ecuador/">Leer más</a>

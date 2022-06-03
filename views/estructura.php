@@ -12,8 +12,8 @@ $logueado= $_SESSION['logueado']?? 0
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEA PUZZLE</title>
     <link rel="icon" type="image/jpg" href="build/img/ico.ico">
-    <link rel="preload" href="build/css/app.css" as="style">
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preload" href="/build/css/app.css" as="style">
+    <link rel="stylesheet" href="/build/css/app.css">
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@ $logueado= $_SESSION['logueado']?? 0
     <header class="header">
         <div class="header__barra contenedor">
             <div class="header__logo">
-                <img src="build/img/iconoo.png" alt="logotipo" class="header__img">
+                <img src="/build/img/iconoo.png" alt="logotipo" class="header__img">
                 <a href="/">
                     <p class="header__titulo">
                         TEA <span>PUZZLE</span>
@@ -114,7 +114,7 @@ $logueado= $_SESSION['logueado']?? 0
 
             </div>
             <div class="footer__logo">
-                <img src="build/img/Logo.png" alt="logo" class="footer__img">
+                <img src="/build/img/Logo.png" alt="logo" class="footer__img">
            </div>
         </div>
         <div class="copy">

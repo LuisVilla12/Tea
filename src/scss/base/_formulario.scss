@@ -157,7 +157,11 @@ form {
     justify-content: space-between;
     column-gap: 5rem;
 }
-
+.space_center {
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+}
 .dos_campos {
     @include m.tablet {
         @include m.grid(2, 1rem);

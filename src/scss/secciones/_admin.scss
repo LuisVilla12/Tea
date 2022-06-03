@@ -1,0 +1,6 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.dos_columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
