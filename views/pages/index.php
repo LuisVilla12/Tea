@@ -43,50 +43,50 @@
         </div>
     </section>   
     <div class="inicio_noticias">
-        <div class="contenedor">
+        <div class="inicio_noticias__grid contenedor">
             <div class="inicio_noticias__img">
-
+                <img src="" alt="img">
             </div>
             <div class="inicio_noticias__texto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, modi! Praesentium inventore facere natus velit molestiae. Impedit aperiam sit praesentium.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, modi! Praesentium inventore facere natus velit molestiae. Impedit aperiam sit praesentium.natus velit molestiae. Impedit aperiam sit praesentium.</p>
             </div>
         </div>
     </div>
-    <section class="noticieros">
-        <h3 class="noticieros__titulo">Noticias</h3>
-    <div class="noticieros__grid contenedor">
-        <section class="noticia">
-            <h1>16 de abril: Universidad Estatal de Arizona ofrece nuevos recursos para estudiantes en el espectro autista</h1>
-            <div class="noticia__mask">
-                <img src="/build/img/15abril.jpg">
+    <div class="noticiero__inicio">
+        <div class="contenedor">
+            <h2 class="noticiero__inicio__titulo">Te puede interesar</h2>
+            <div class="noticiero__inicio__grid">
+                <section class="noticia">
+                    <div class="noticia__mask">
+                        <img src="/build/img/15abril.jpg">
+                    </div>
+                    <h4 class="noticia__titulo">Universidad Estatal de Arizona ofrece nuevos recursos para estudiantes en el espectro autista</h4>
+                    <div class="centrar">
+                        <a class="noticia__btn" href="https://www.univision.com/local/arizona-ktvw/universidad-estatal-de-arizona-ofrece-nuevos-recursos-para-estudiantes-en-el-espectro-autista-video">Leer más</a>
+                    </div>                
+                </section>
+                <section class="noticia">        
+                    <div class="noticia__mask">
+                        <img src="/build/img/portada3.jpg">
+                    </div>
+                    <h4 class="noticia__titulo">Autismo: Cuando el agresor es el Estado, el culpable eres tú</h4>
+                    <div class="centrar">            
+                        <a class="noticia__btn" href="https://autismodiario.com/2021/07/18/autismo-cuando-el-agresor-es-el-estado-el-culpable-eres-tu/">Leer más</a>            
+                    </div>
+                </section>
+                <section class="noticia">        
+                    <div class="noticia__mask">
+                        <img src="/build/img/portada3.jpg">
+                    </div>
+                    <h4 class="noticia__titulo">Autismo: Cuando el agresor es el Estado, el culpable eres tú</h4>
+                    <div class="centrar">            
+                        <a class="noticia__btn" href="https://autismodiario.com/2021/07/18/autismo-cuando-el-agresor-es-el-estado-el-culpable-eres-tu/">Leer más</a>            
+                    </div>
+                </section>
             </div>
-            <p>El nuevo programa ofrece ayuda a estudiantes en el espectro autista que desean avanzar en su camino profesional. Estudiantes voluntarios de la Universidad Estatal de Arizona ayudan a los participantes a mejorar sus habilidades sociales y técnicas de estudio.</p>
-            <div class="centrar">
-            <a class="btn" href="https://www.univision.com/local/arizona-ktvw/universidad-estatal-de-arizona-ofrece-nuevos-recursos-para-estudiantes-en-el-espectro-autista-video">Leer más</a>
-            </div>                
-        </section>            
-        <section class="noticia">        
-            <h1>Autismo: Cuando el agresor es el Estado, el culpable eres tú</h1>
-            <div class="noticia__mask">
-            <img src="/build/img/portada3.jpg">
-            </div>
-            <p>Estos últimos días los titulares de prensa se han llenado con historias durísimas de agresiones y asesinato a personas con autismo. Se desató cierta ola de indignación, aunque no hay manifestaciones masivas, ni minutos de silencio, ni declaraciones institucionales.</p>
-            <div class="centrar">            
-            <a class="btn" href="https://autismodiario.com/2021/07/18/autismo-cuando-el-agresor-es-el-estado-el-culpable-eres-tu/">Leer más</a>            
-            </div>
-        </section>
-        <!-- <section class="noticia">
-            <h1>2 DE ABRIL: DÍA MUNDIAL DEL AUTISMO</h1>
-            <div class="noticia__mask">
-            <img src="/build/img/portada1.jpg">
-            </div>
-            <h5>Fuente: Teleton Mexico</h5>
-            <p>Muchos jóvenes han logrado salir adelante gracias a tu terquedad. Dona Aquí. Tu donativo ha hecho posible la atención de más de 455,000 personas en un Centro Teletón. Apoya. Cambia vidas. Súmate. Dona</p>
-            <div class="centrar">            
-            <a class="btn" href="https://teleton.org/que-es-el-autismo/?gclid=CjwKCAiA9tyQBhAIEiwA6tdCrNBZXl3BPHUPe7la6_jgX5jUNTD46tn2XSJxp7JkEE0WQnRIlojjthoCifcQAvD_BwE">Leer más</a>
-            </div>
-        </section>                 -->
+        </div>
     </div>
+
     <div class="centrar">
     <a class="btn" href="/noticias">Ver más noticias</a>
     </div>

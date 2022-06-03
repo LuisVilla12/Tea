@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.login{
+    &__grid{
+        @include m.grid(2,1rem);
+    }
+}
+
+.centrar-contenido{
+    margin: 0 auto;
+}
+.recuadro__form{
+    display: inline-block;
+    background-color: #F9B14A;
+    p{
+        display: inline-block;
+    }
+}

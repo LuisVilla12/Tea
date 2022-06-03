@@ -72,11 +72,11 @@ form {
         display: block;
         width: 100%;
         padding: 1rem;
-        background-color: v.$secundario;
-        border: none;
+        background-color: v.$blanco;
+        border: .1rem solid #606060;
         border-radius: 1rem;
         &::placeholder {
-            color: v.$negro;
+            color: #606060;
         }
     }
     &__radios {
@@ -144,6 +144,10 @@ form {
     a {
         display: block;
         padding-bottom: 1.5rem;
+        span{
+            color: #FF5589;
+            font-weight: bold;
+        }
     }
 }
 

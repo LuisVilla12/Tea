@@ -1,30 +1,32 @@
-<h1 class="titulo__login">Registrate ahora</h1>
-<p class="descripcion">Contesta el siguiente formulario</p>
-<main class="contenedor">
-<?php
+<div class="recuadro__form">
+    <p>Registrate ahora</p>
+</div>
+<main class="contenedor-max centrar-contenido">
+    <?php
     include_once __DIR__ . '/alertas.php';
-?>
+    ?>
 <form action="/crear-cuenta" method="POST" class="formulario">
+    <p class="descripcion">Contesta el siguiente formulario</p>
     <fieldset>
         <legend>Datos generales</legend>
         <div class="tres_campos">
             <div class="campo">
-                <label class="campo__label" for="nombre">Nombre:</label>
+                <!-- <label class="campo__label" for="nombre">Nombre:</label> -->
                 <input class="campo__input" type="text" id="nombre" placeholder="Ingrese su nombre" name="nombre" 
                 value="<?php echo sanitizar($usuario->nombre)?>">
             </div>
             <div class="campo">
-                <label class="campo__label" for="apellidoPat">Apellido Paterno:</label>
+                <!-- <label class="campo__label" for="apellidoPat">Apellido Paterno:</label> -->
                 <input class="campo__input" type="text" id="apellidoPat" placeholder="Ingrese su apellido paterno" name="apellidoPat" value="<?php echo sanitizar($usuario->apellidoPat)?>">
             </div>
             <div class="campo">
-                <label class="campo__label" for="apellidoMat">Apellido Materno:</label>
+                <!-- <label class="campo__label" for="apellidoMat">Apellido Materno:</label> -->
                 <input class="campo__input" type="text" id="apellidoMat" placeholder="Ingrese su apellido materno" name="apellidoMat" value="<?php echo sanitizar($usuario->apellidoMat)?>">
             </div>
         </div>
         <div class="dos_campos">
             <div class="campo">
-                <label class="campo__label" for="fechaNacimiento">Fecha de nacimiento:</label>
+                <!-- <label class="campo__label" for="fechaNacimiento">Fecha de nacimiento:</label> -->
                 <input class="campo__input" type="date" id="fechaNacimiento" name="fechaNacimiento" value="<?php echo sanitizar($usuario->fechaNacimiento)?>">
             </div>
             <div class="campo">

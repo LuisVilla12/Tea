@@ -1,17 +1,23 @@
+<div class="eleccionPC">
+    <div class="eleccionPC__contenido eleccionPC_padre activo">
+        <h2 class="eleccionPC__titulo">Padres y Tutores</h2>
+    </div>
+    <div class="eleccionPC__contenido eleccionPC_hijo">
+        <h2 class="eleccionPC__titulo">Infantes</h2>
+    </div>
+</div>        
 <main class="contenedor">
-        <div class="eleccionPC">
-            <div class="eleccionPC__contenido eleccionPC_padre activo">
-                <h2 class="eleccionPC__titulo">Padres y Tutores</h2>
-            </div>
-            <div class="eleccionPC__contenido eleccionPC_hijo">
-                <h2 class="eleccionPC__titulo">Infantes</h2>
-            </div>
-        </div>
-        <div class="material__clasificacion">
-            <p class="material__clasificacion__boton material__clasificacion__boton-activo enlaces">Enlaces</p>
-            <p class="material__clasificacion__boton videos">Videos</p>
-            <p class="material__clasificacion__boton documentos">Documentos</p>
-        </div>
+    <div class="material__clasificacion">
+        <p class="material__clasificacion__boton material__clasificacion__boton-activo enlaces">Enlaces</p>
+        <p class="material__clasificacion__boton videos">Videos</p>
+        <p class="material__clasificacion__boton documentos">Documentos</p>
+    </div>
+    <div class="lineas contenedor">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+    </div>
         <div class="materiales">
             <div class="tutores visible">
                 <div class="cat1__enlace visible">

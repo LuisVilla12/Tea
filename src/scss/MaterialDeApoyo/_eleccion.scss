@@ -41,24 +41,30 @@
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
     background-color: v.$blanco;
     &__contenido {
         padding: 2rem;
-        display: grid;
         place-items: center;
+        display: grid;
         text-align: center;
         cursor: pointer;
-        background-color: v.$recuadros;
+        background-color: #F2B4C1;
     }
     &__titulo {
         text-transform: uppercase;
-        color: v.$titulo;
+        color: v.$blanco;
         font-size: 3.4rem;
         margin: 2rem 0;
     }
 }
-
+.lineas{
+    @include m.grid(4,1rem);
+    .linea{
+        background-color: #EFDD88;
+        height: .4rem;
+        margin:1rem 0;
+    }
+}
 //  Propiedades
 .tutores,
 .infantes {
@@ -76,15 +82,16 @@
 }
 
 .activo {
-    background-color: darken($color: v.$recuadros, $amount: 30);
+     background-color: #A5D7E2;
 }
+
 
 // Categorias de materiales
 .material__clasificacion {
     margin: 0 0 2rem 0;
     @include m.grid(3, 2rem);
     &__boton {
-        @include m.boton(v.$terciario, v.$negro);
+        @include m.boton(v.$botones, v.$negro);
         text-align: center;
         border-radius: 3rem;
         color: v.$blanco;
@@ -92,7 +99,7 @@
         padding: 1rem;
         cursor: pointer;
         &-activo {
-            background-color: darken($color: v.$recuadros, $amount: 30);
+            background-color: #A5D7E2;
         }
     }
 }
