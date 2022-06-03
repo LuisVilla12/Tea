@@ -5,7 +5,7 @@
     margin-top: 2rem;
     border-spacing: 0;
     thead {
-        background-color: v.$primario;
+        background-color: #EB566E;
     }
     th {
         color: v.$blanco;
@@ -25,4 +25,19 @@
         text-align: center;
         color: v.$negro;
     }
+}
+.form_ajustar {
+    display: grid;
+    place-items: center;
+    &__btn{
+        @include m.boton( #EB566E,v.$blanco);
+        margin: 0;
+    }
+}
+.padding {
+    padding: 0;
+    // color: green;
+}
+.rojo{
+    color: v.$blanco;
 }

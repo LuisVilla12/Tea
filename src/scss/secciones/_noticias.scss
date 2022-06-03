@@ -9,7 +9,13 @@
            }
     }
     &__img{
-        width: 100%;   
+        display: grid;
+        place-items: center;
+        height: 30rem;
+        width: 100%;
+        img{
+            height: 30rem;
+        }   
     }
     &__texto{
     p{
@@ -30,6 +36,11 @@
         @include m.tablet {
             @include m.grid(3,3rem);
         }
+    }
+    &__img{
+        max-height: 10rem;
+        // img{
+        // }
     }
 }
 .noticia{

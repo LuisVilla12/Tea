@@ -4,3 +4,22 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.inicio{
+    &__grid{
+        @include m.grid(3,0);
+    }
+    &__opcion1,&__opcion2,&__opcion3{
+        padding: 5rem;
+        color: v.$blanco;
+        text-align: center;
+    }
+    &__opcion1{
+        background-color: #73C5EA;
+    }
+    &__opcion2{
+        background-color: #FFD248;
+    }
+    &__opcion3{
+        background-color: #EE6C7F;
+    }
+}

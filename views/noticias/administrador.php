@@ -22,15 +22,19 @@
                     <td><?php echo $noticia->fecha?></td>
                     <td><?php echo $noticia->fuente ?></td>                    
                     <td>
-                        <div class="dos_columnas">                        
-                        <a href="/noticias/actualizar?id=<?php echo $noticia->id; ?>" class="btn amarillo" ><i class="fa-solid fa-pen"></i></a>
-                        <form method="POST" class="w-100" action="/noticias/eliminar">
-                            <input type="hidden" name="id" value="<?php echo $noticia->id; ?>">
-                            <input type="hidden" name="tipo" value="noticias">
-                            <button type="submit" class="btn rojo enviar" value="">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </form>
+                        <div class="dos_columnas">
+                            <div class="form_ajustar">
+                                <a href="/noticias/actualizar?id=<?php echo $noticia->id; ?>" class="form_ajustar__btn amarillo" ><i class="fa-solid fa-pen"></i></a>
+                            </div>      
+                            <div class="form_ajustar">
+                            <form method="POST" class="w-100" action="/noticias/eliminar">
+                                <input type="hidden" name="id" value="<?php echo $noticia->id; ?>">
+                                <input type="hidden" name="tipo" value="noticias">
+                                <button type="submit" class="form_ajustar__btn rojo enviar" value="">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </form>
+                            </div>                  
                         </div>                        
                     </td>
                 </tr>

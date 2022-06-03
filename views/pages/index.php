@@ -37,10 +37,10 @@
     <div class="inicio_noticias">
         <div class="inicio_noticias__grid contenedor">
             <div class="inicio_noticias__img">
-                <img src="" alt="img">
+                <img src="/build/img/Personajes xicoclass w letras.png" alt="img">
             </div>
             <div class="inicio_noticias__texto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, modi! Praesentium inventore facere natus velit molestiae. Impedit aperiam sit praesentium.natus velit molestiae. Impedit aperiam sit praesentium.</p>
+                <p>La Organización Mundial de la Salud (OMS), estima que la incidencia del autismo a nivel mundial es de 1/160, pero mencionan que existen variaciones muy importantes en cuanto a las cifras de diversos estudios en el mundo. La CDC (Centers for Disease Control and Prevention), una de las instituciones de mayor prestigio en cuanto a datos y estadísticas, actualmente manejan la cifra de 1 caso de autismo por cada 68 nacimientos.</p>
             </div>
         </div>
     </div>

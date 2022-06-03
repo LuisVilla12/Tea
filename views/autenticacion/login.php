@@ -1,9 +1,11 @@
 <main class="contenedor-min">
     <div class="login">
         <div class="login__grid contenedor">
-            <div class="login__seccion1"></div>
+            <div class="login__seccion1">
+                <img src="/build/img/login.jpg" alt="imagen">
+            </div>
             <div class="login__seccion2">
-                <div class="contenedor-max">
+                <div class="contenedor">
                     <h2 >Ingresa tus datos para iniciar sesión</h2>
                     <form action="" method="POST" class="login_form">
                         <div class="campo">

@@ -1,8 +1,33 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 .login{
+    margin: 4rem auto;
     &__grid{
-        @include m.grid(2,1rem);
+        @include m.tablet {
+            @include m.grid(2,1rem);
+        }
+    }
+    &__seccion1{
+        height: 30rem;
+        @include m.tablet {
+            height: 50rem;
+        }
+
+        img{
+            margin: 0 auto;
+            max-height: 30rem;
+            @include m.tablet {
+                max-height: 50rem;
+            }
+         }
+    }
+    &__seccion2{
+        .contenedor{
+            @include m.tablet {
+                max-width:70rem;
+                width:85%;   
+            }
+        }
     }
 }
 
@@ -15,6 +40,48 @@
     p{
         padding:2rem 9rem ;
         background-color: #F9B14A;
+        display: inline-block;
+        text-transform: uppercase;
+        color: v.$blanco;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
+.recuadro__admin{
+    display: inline-block;
+    width: auto;
+    p{
+        padding:2rem 9.5rem ;
+        background-color: #EB566E;
+        margin: 2rem 0 0 0;
+        display: inline-block;
+        text-transform: uppercase;
+        color: v.$blanco;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
+.recuadro__registro{
+    display: inline-block;
+    width: auto;
+    p{
+        margin: 0;
+        padding:2rem 9rem ;
+        background-color: #F9B14A;
+        display: inline-block;
+        text-transform: uppercase;
+        color: v.$blanco;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
+.recuadro__usuario{
+    display: inline-block;
+    width: auto;
+    p{
+        margin: 0;
+        padding:2rem 9rem ;
+        background-color: #80D5D2;
         display: inline-block;
         text-transform: uppercase;
         color: v.$blanco;
