@@ -42,8 +42,15 @@
             </div>
         </div>
     </section>   
-    <div class="svg">
-        <img src="build/img/wave_4.svg" alt="wave">
+    <div class="inicio_noticias">
+        <div class="contenedor">
+            <div class="inicio_noticias__img">
+
+            </div>
+            <div class="inicio_noticias__texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, modi! Praesentium inventore facere natus velit molestiae. Impedit aperiam sit praesentium.</p>
+            </div>
+        </div>
     </div>
     <section class="noticieros">
         <h3 class="noticieros__titulo">Noticias</h3>
