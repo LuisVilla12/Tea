@@ -185,5 +185,10 @@ class ActiveRecord {
         $resultado = self::$db->query($query);
         return $resultado;
     }
+    // Consulta general SQL
+    public static function SQL($consulta) {
+        $resultado = self::consultarSQL($consulta);        
+        return $resultado ;
+    }
 
 }

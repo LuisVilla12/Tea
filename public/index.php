@@ -28,6 +28,11 @@ $router->post('/infantes/eliminar',[InfanteController::class,'eliminar']);
 
 // Admin
 $router->get('/admin',[AdminController::class,'index']);
+
+// Agenda
+// $router->get('/admin/agenda',[PaginasControler::class,'inicio']);
+$router->get('/agenda',[AdminController::class,'agenda']);
+
 // Noticia
 $router->get('/noticias',[NoticiasController::class,'index']);
 $router->get('/noticias/administrador',[NoticiasController::class,'gestion']);
