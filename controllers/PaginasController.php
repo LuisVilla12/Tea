@@ -36,32 +36,27 @@ class PaginasController {
         $cita = new Cita();
         if($_SERVER['REQUEST_METHOD']=='POST'){
             $cita->sincronizar($_POST);
-            // validar si hay citas ese dia
             $resultadoExisteCita =$cita->existeCitaEnEseDia($cita->fecha);
             // si no hay citas ese dia
             if(!$resultadoExisteCita){
-                $resultado=$cita->guardar();                    
-                if($resultado){
-                    header('Location: /inicio');
-                }
+                $resultado=$cita->guardar();
+                $respuesta=[
+                    'resultado'=>$resultado   
+               ];
+               echo json_encode($respuesta);
             }
             else{
-                debuguear('Hay citas en esa fecha');
                 $resultadoExisteCitaHorario =$cita->existeCitaEnEseHorario($cita->fecha,$cita->id_horario);
-                // si no hay citas ese horario
+                // debuguear($resultadoExisteCitaHorario);
                 if(!$resultadoExisteCitaHorario){
-                    $resultado=$cita->guardar();                    
-                    if($resultado){
-                        header('Location: /inicio');
-                    }
-                }
-                else{
-                    debuguear('Hay citas en ese horario');
+                    $resultado=$cita->guardar();
+                    $respuesta=[
+                        'resultado'=>$resultado   
+                   ];
+                   echo json_encode($respuesta);                    
                 }
             }
         }
-        // $horariosOcupados=$cita->horariosNoDisponibles($cita->fecha,$cita->id_horario);
-        // $alertas=Infante::getAlertas();
         $idTutor=$_SESSION['id'];
         $infantes=Infante::allId($idTutor);
         $horarios=Horarios::all();

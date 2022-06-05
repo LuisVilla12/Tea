@@ -2,6 +2,11 @@
 @use 'base/mixins' as m;
 .header {
     background-color: #73C5EA;
+    position: sticky;
+    top: 0;
+    @include m.tablet {
+        position: static;
+    }
     &__barra {
         display: flex;
         justify-content: space-between;
@@ -127,12 +132,12 @@
         display: block;
         color: v.$blanco;
         padding: 2rem;
-        background-color: darken($color: v.$secundario, $amount: 15);
+        background-color: #73C5EA;
         margin: .5rem 0;
         transition: background-color, color .4s ease-in-out;
         &:hover {
             cursor: pointer;
-            background-color: lighten($color: v.$primario, $amount: 15);
+            background-color: lighten($color: #73C5EA, $amount: 15);
             font-weight: bold;
         }
         i {

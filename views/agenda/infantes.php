@@ -5,8 +5,8 @@
 <main class="contenedor inicio">
     <h2 class="text-center titulo__login">Infantes registrados</h1>
     <div class="space_between">
-        <a href="/inicio" class="btn_primario">Inicio</a>
-        <a href="/registrar-infante" class="btn_primario">Registrar infante</a>
+        <a href="/inicio" class="btn_uno">Inicio</a>
+        <a href="/registrar-infante" class="btn_dos">Registrar infante</a>
         <!-- <a href="/cita" class="btn_secundario">Agendar cita</a> -->
     </div>
     <?php if(count($infantes)===0):?>

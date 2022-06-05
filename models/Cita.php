@@ -52,9 +52,9 @@ class Cita extends ActiveRecord{
         // debuguear($query);
         // exit;
         $resultado = self::$db->query($query);
-        // debuguear($resultado);
+            // debuguear($resultado);
         // exit;
-        if($resultado->num_rows){
+        if(!$resultado->num_rows){
             return true;
         }else{
             return false;
@@ -64,8 +64,8 @@ class Cita extends ActiveRecord{
         $query= "SELECT id,horaInicio,horaFin FROM  cita as c inner join horarios as h on c.id_horario=h.id WHERE fecha= '" .$fecha . "'" . " AND ". $horario . " = " . "h.id";
         // $query = "SELECT * FROM " . static::$tabla;
         $resultado = self::consultarSQL($query);
-        debuguear($resultado);
-        exit;
+        // debuguear($resultado);
+        // exit;
         return $resultado;
         
     }

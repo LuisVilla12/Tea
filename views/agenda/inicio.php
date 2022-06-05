@@ -5,9 +5,8 @@
 <main class="contenedor inicio">
     <h2 class="text-center titulo__login">Mis citas</h1>
     <div class="space_between">
-        <!-- <a href="/registrar-infante" class="btn_primario">Registrar infante</a> -->
-        <a href="/inicio/infantes" class="btn_primario">Ver infantes</a>
-        <a href="/cita" class="btn_secundario">Agendar cita</a>
+        <a href="/inicio/infantes" class="btn_uno">Ver infantes</a>
+        <a href="/cita" class="btn_dos">Agendar cita</a>
     </div>    
     <?php if(count($citas)===0):?>
         <p>No hay citas</p>
@@ -57,4 +56,10 @@
         </tbody>
     </table>
 </main>
+<?php
+    $script="
+    <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <script src='/build/AccionesCita.js'></script>
+    ";
+?>
 

@@ -36,10 +36,6 @@ $logueado= $_SESSION['logueado']?? 0;
             </div>
             <ul class="nav">
                 <li>
-                    <a href="/conocenos" class="nav__a">
-                        <i class="fa-solid fa-magnifying-glass"></i>Conócenos</a>
-                </li>
-                <li>
                     <a href="/materia-de-apoyo" class="nav__a">
                         <i class="fa-solid fa-book-open"></i>Material de apoyo</a>
                     
@@ -54,6 +50,10 @@ $logueado= $_SESSION['logueado']?? 0;
                         <i class="fa-solid fa-user"></i>Cerrar sesión</a>
                 </li>
                 <?php else:?>
+                <li>
+                    <a href="/conocenos" class="nav__a">
+                        <i class="fa-solid fa-magnifying-glass"></i>Conócenos</a>
+                </li>
                 <li>
                     <a href="/login" class="nav__a">
                         <i class="fa-solid fa-user"></i>Registrarse</a>

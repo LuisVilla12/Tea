@@ -6,7 +6,10 @@
 }
 .inicio{
     &__grid{
-        @include m.grid(3,0);
+        margin-bottom: 3rem;
+        @include m.tablet {
+            @include m.grid(3,0);
+        }
     }
     &__opcion1,&__opcion2,&__opcion3{
         padding: 5rem;
@@ -24,5 +27,8 @@
     }
 }
 .verde{
-    background-color: green;
+    background-color: #95c11f;
+}
+.btn_uno,.btn_dos{
+    @include m.boton(v.$botones,v.$blanco);
 }

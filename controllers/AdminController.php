@@ -65,7 +65,7 @@ class AdminController{
         $consulta .= " INNER JOIN infante as i ON c.id_infante=i.id";
         $consulta .= " INNER JOIN horarios as h ON h.id=c.id_horario ";        
         // $consulta .= " LEFT OUTER JOIN servicios  ON servicios.id=citas_servicios.idServicio ";        
-        $consulta .= " WHERE t.id = '${id}' and c.cancelo=0 order by h.horaInicio ASC";
+        $consulta .= " WHERE t.id = '${id}' and c.cancelo=0 order by c.fecha ASC";
         $resultadoCitas=AdminCita::SQL($consulta);
 
         $router->render('agenda/inicio',[

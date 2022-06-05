@@ -52,7 +52,7 @@ async function confirmarAsistencia_dos(id) {
         Swal.fire({
             icon: 'error',
             title: 'Error',
-            text: 'Cita no puedo ser cancelada',
+            text: 'Cita no puedo ser confirmada',
             // footer: '<a href="">Why do I have this issue?</a>'
             button: 'OK'
         }).then(() => {
@@ -87,7 +87,7 @@ function confirmarEliminar(id) {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire(
-                'Eliminado!',
+                'Cancelada!',
                 'Cita ha sido cancelada',
                 'success'
             )
