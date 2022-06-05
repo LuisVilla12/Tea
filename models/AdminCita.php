@@ -2,7 +2,7 @@
 namespace Model;
 class AdminCita extends ActiveRecord{
     protected static $tabla ='citas';
-    protected static $columnasDB =['id','nombreInfante','nombreTutor','fechaNacimiento','sexo','horaInicio','fecha'];
+    protected static $columnasDB =['id','nombreInfante','nombreTutor','fechaNacimiento','sexo','horaInicio','fecha','asistir','cancelo'];
     public $id;
     public $nombreInfante;
     public $nombreTutor;
@@ -10,8 +10,8 @@ class AdminCita extends ActiveRecord{
     public $sexo;
     public $horaInicio;
     public $fecha;
-    // public $asistir;
-    // public $cancelo;
+    public $asistir;
+    public $cancelo;
     public function __construct($args=[]){
         $this->id=$args['id']??null;
         $this->nombreInfante=$args['nombreInfante']??'';
@@ -20,7 +20,8 @@ class AdminCita extends ActiveRecord{
         $this->sexo=$args['sexo']??'';
         $this->horaInicio=$args['horaInicio']??'';        
         $this->fecha=$args['fecha']??'';        
-        // $this->asistir=$args['']??'';        
+        $this->asistir=$args['asistir']??'';        
+        $this->cancelo=$args['cancelo']??'';        
     }
 }
 ?>  

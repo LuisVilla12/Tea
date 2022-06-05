@@ -41,13 +41,20 @@ class InfanteController{
         }       
         $alertas = Infante::getAlertas();        
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $args=$_POST['noticia'];
-            $infante->sincronizar($args);   
+            // debuguear($_POST);
+            $args=$_POST['infante'];
+            $infante->sincronizar($args);
+            // debuguear($infante);  
+            // exit; 
             // Crea arreglo de errores
             $alertas = $infante->validarErrores();
+            // debuguear($alertas);
+            // exit;
              // Si el arreglo de errores esta vacio
             if (empty($alertas)) {
                 $resultado=$infante->guardar();
+                // debuguear($resultado);
+                // exit;
                 if($resultado){
                     header('Location:/infantes/administrador');
                 }
@@ -63,14 +70,13 @@ class InfanteController{
             $id=$_POST['id'];
             $infante= Infante::find($id);
             $resultado=$infante->cancelar($id);
-            // debuguear($resultado);
-            // $respuesta=[
-            //      'resultado'=>$resultado   
-            // ];
-            // echo json_encode($respuesta);
-            if($resultado){
-                header('Location: /infantes/administrador' );
-            }
+            $respuesta=[
+                 'resultado'=>$resultado   
+            ];
+            echo json_encode($respuesta);
+            // if($resultado){
+            //     header('Location: /infantes/administrador' );
+            // }
         }
 
     }

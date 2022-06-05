@@ -39,23 +39,29 @@
                     </td>
                     <td><?php echo $infante->nombreTutor ?></td>                    
                     <td>
-                        <div class="dos_columnas">
+                    <div class="dos_columnas">
                             <div class="form_ajustar">
-                                <a href="/infantes/actualizar?id=<?php echo $infante->id; ?>" class="form_ajustar__btn amarillo padding" ><i class="fa-solid fa-pen"></i></a>
+                                <a class="padding" id="asistir" href="/infantes/actualizar?id=<?php echo $infante->id;?>" ><i data-id="<?php echo $infante->id; ?>" class="fa-regular fa-square-check"></i></a>                            
                             </div>
                             <div class="form_ajustar">
-                                <form method="POST" class="w-100" action="/infantes/eliminar">
-                                <input type="hidden" name="id" value="<?php echo $infante->id; ?>">
-                                <input type="hidden" name="tipo" value="infantes">
-                                <button type="submit" class="form_ajustar__btn rojo enviar" value="">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
+                                <form method="POST" class="posponer" action="/infantes/eliminar">
+                                    <input type="hidden" name="id" value="<?php echo $infante->id;?>">
+                                    <!-- <input type="hidden" name="tipo" value="usuario"> -->
+                                    <button type="submit" class="" value="" id="eliminar" data-id="<?php echo $infante->id; ?>">
+                                        <i data-id="<?php echo $infante->id; ?>" class="fa-regular fa-rectangle-xmark"></i>
+                                    </button>
                                 </form>
-                            </div>                        
-                        </div>                        
+                            </div>              
+                        </div>                  
                     </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 </main>
+<?php
+    $script="
+    <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <script src='/build/EliminarInfante.js'></script>
+    ";
+?>

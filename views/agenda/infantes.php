@@ -31,15 +31,19 @@
                             $edad= getAge($infante->fechaNacimiento);
                             echo $edad;
                             ?>        
-                </td>
+                    </td>
                     <!-- <td>
-                        <a href="/infante/actualizar?id=<?php echo $infante->id; ?>" class="btn amarillo">Actualizar</a>
-                        <form method="POST" class="w-100" action="/infante/eliminar">
-                            <input type="hidden" name="id" value="<?php echo $infante->id; ?>">
-                            <input type="hidden" name="tipo" value="infante">
-                            <input type="submit" class="btn rojo enviar" value="Eliminar">
-                        </form>
+                        <div class="dos_columnas">
+                            <div class="form_ajustar">
+                                <a href="/infante/actualizar?id=<?php echo $infante->id; ?>" class="form_ajustar__btn amarillo" ><i class="fa-solid fa-eye"></i></a>
+                            </div>
+                            <div class="form_ajustar">
+                                <a href="/infante/actualizar?id=<?php echo $infante->id; ?>" class="form_ajustar__btn amarillo" ><i class="fa-solid fa-pen"></i></a>
+                            </div>       
+                         
+                        </div>          
                     </td> -->
+                </tr>
                 </tr>
             <?php endforeach; ?>
         </tbody>

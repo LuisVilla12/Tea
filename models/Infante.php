@@ -26,7 +26,7 @@ class Infante extends ActiveRecord{
         $this->idUsuario=$args['idUsuario']?? 1;        
         $this->altura=$args['altura']?? '';        
         $this->peso=$args['peso']?? '';        
-        $this->estudia=$args['estudia']?? '';        
+        $this->estudia=$args['estudia']?? 0;        
         $this->estatus=$args['estatus']?? 0;        
     }
     // Validar
@@ -52,9 +52,9 @@ class Infante extends ActiveRecord{
         if(!$this->peso){
             self::$alertas['error'][]='Ingrese su peso';
         }
-        if(!$this->estudia){
-            self::$alertas['error'][]='Seleccione si estudia ';
-        }
+        // if(!$this->estudia){
+        //     self::$alertas['error'][]='Seleccione si estudia ';
+        // }
         return self::$alertas;
     }
       // Revisa si usuario existe

@@ -1,5 +1,5 @@
 <?php 
-// debuguear($_SESSION);
+// debuguear($citas);
 ?>
 
 <main class="contenedor inicio">
@@ -25,8 +25,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                    
             <?php foreach ($citas as $cita) : ?>
-                <tr>
+                
+                <tr  class="<?php echo $cita->asistir==1? 'verde': 'nada';?>">
                     <td><?php echo $cita->id ?></td>
                     <td><?php echo $cita->nombreInfante?></td></td>
                     <td>
@@ -39,19 +41,14 @@
                     <td><?php echo $cita->fecha?></td>
                     <td><?php echo $cita->horaInicio?></td>
                     <td>
-                        <div class="dos_columnas">
-                            <div class="form_ajustar">
-                                <a class="padding" id="asistir" href="/agenda/asistir?id=<?php echo $cita->id;?>" ><i data-id="<?php echo $cita->id; ?>" class="fa-regular fa-square-check"></i></a>                            
-                            </div>
-                            <div class="form_ajustar">
-                                <form method="POST" class="posponer" action="/agenda/eliminar">
-                                    <input type="hidden" name="id" value="<?php echo $cita->id;?>">
-                                    <!-- <input type="hidden" name="tipo" value="usuario"> -->
-                                    <button type="submit" class="" value="" id="eliminar" data-id="<?php echo $cita->id; ?>">
-                                        <i data-id="<?php echo $cita->id; ?>" class="fa-regular fa-rectangle-xmark"></i>
-                                    </button>
-                                </form>
-                            </div>              
+                        <div class="form_ajustar">
+                            <form method="POST" class="posponer" action="/agenda/eliminar">
+                                <input type="hidden" name="id" value="<?php echo $cita->id;?>">
+                                <!-- <input type="hidden" name="tipo" value="usuario"> -->
+                                <button type="submit" class="" value="" id="eliminar" data-id="<?php echo $cita->id; ?>">
+                                    <i data-id="<?php echo $cita->id; ?>" class="fa-regular fa-rectangle-xmark"></i>
+                                </button>
+                            </form>             
                         </div>
                     </td>
                 </tr>
