@@ -19,8 +19,8 @@
     </section>
 
 
-    <section class="sabias contenedor">
-        <div class="sabias__grid">
+    <section class="sabias">
+        <div class="sabias__grid contenedor">
             <div class="sabias__info">
                 <h4 class="sabias__titulo">Sabiás que...</h4>
                 <h3 class="sabias__subtitulo">Es un trastorno que comparten muchos genios</h3>

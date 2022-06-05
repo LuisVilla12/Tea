@@ -12,7 +12,7 @@ $logueado= $_SESSION['logueado']?? 0;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEA PUZZLE</title>
-    <link rel="icon" type="image/jpg" href="build/img/ico.ico">
+    <link rel="icon" type="image/jpg" href="/build/img/ico.ico">
     <link rel="preload" href="/build/css/app.css" as="style">
     <link rel="stylesheet" href="/build/css/app.css">
     <!-- fuentes -->
@@ -30,7 +30,7 @@ $logueado= $_SESSION['logueado']?? 0;
                 <img src="/build/img/iconoo.png" alt="logotipo" class="header__img">
                 <a href="/">
                     <p class="header__titulo">
-                        TEA <span>PUZZLE</span>
+                        CYTEA<span></span>
                     </p>
                 </a>
             </div>

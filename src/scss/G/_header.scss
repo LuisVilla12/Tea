@@ -40,10 +40,13 @@
         font-size: 1.9rem;
         color: v.$blanco;
         i {
-            margin-right: .6rem;
+            margin-right: .2rem;
         }
         @include m.tablet {
-            margin-right: 1.4rem;
+            margin-right: 1rem;
+        }
+        @include m.desktop {
+            margin-right: 1.3rem;
         }
     }
     display: none;
