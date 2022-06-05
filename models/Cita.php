@@ -28,7 +28,9 @@ class Cita extends ActiveRecord{
         return $resultado;              
     }
     public static function cancelar($id) {
-        $query = "UPDATE " .  static::$tabla . " SET cancelar=1  WHERE id=" . $id;        
+        $query = "UPDATE " .  static::$tabla . " SET cancelo=1  WHERE id=" . $id;        
+        // debuguear($query);
+        // exit;
         $resultado = self::$db->query($query);        
         return $resultado;
     }

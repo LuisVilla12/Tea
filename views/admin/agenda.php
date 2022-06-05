@@ -4,11 +4,9 @@
 // exit;
 ?>
 <div class="recuadro__admin">
-    <p>Administrador de</p>
+    <p>Agenda</p>
 </div>
-<div class="recuadro__registro">
-    <p>Registros infantes</p>
-</div>
+
 <div class="busqueda contenedor">
 <form action="" class="formulario">
     <div class="campo">
