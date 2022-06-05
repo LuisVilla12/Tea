@@ -1,13 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 .intereses {
-    &__titulo {
-        text-transform: uppercase;
-        color: v.$titulo;
-        font-size: 3.4rem;
-        margin: 2rem 0;
-        text-align: center;
-    }
     &__grid {
         @include m.tablet {
             @include m.grid(3, 2.5rem);
@@ -24,14 +17,26 @@
             margin-bottom: 2rem;
         }
     }
-    background-color: v.$grisClaro;
-    border-radius: 2rem;
+    &__bg{
+        overflow: hidden;
+        border-radius: 2rem;
+        &.linea1{
+            background-color: #80D5D2;
+        }
+        &.linea2{
+            background-color: #F1B300;
+        }
+         
+
+            
+    }
     &__btn {
-        @include m.boton(v.$azul, v.$blanco);
+        @include m.boton(v.$botones, v.$blanco);
         padding: 1.5rem 2rem;
         border-radius: 2rem;
     }
     &__mask {
+        padding: 2rem;
         overflow: hidden;
     }
     &__img {
@@ -45,8 +50,8 @@
     }
     &__titulo {
         text-align: center;
-        color: v.$negro;
-        font-size: 2rem;
+        color: v.$blanco;
+        font-size: 2.9rem;
         margin: 1rem;
     }
     i {

@@ -23,7 +23,10 @@
 }
 .integrantes{
     &__grid{
-        @include m.grid(2,3rem);
+        @include m.tablet {
+            @include m.grid(2,3rem);
+
+        }
     }
     p{
         background-color: #FFF4E6;

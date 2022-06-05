@@ -107,9 +107,9 @@ $logueado= $_SESSION['logueado']?? 0;
                     </div>
                     <div class="ubicacion__maks">
                   
-                    <img class="nav__img none" src="/build/img/LogoITSX.png" alt="">
+                    <img class="nav__img none" src="/build/img/Itsxlogos.png" alt="itsxlogo">
                    
-                    <img class="nav__img none" src="/build/img/LogoUV.png" alt="">
+                    <img class="nav__img none" src="/build/img/Uvlogos.png" alt="uvlogo">
                     </div>
                 </div>
 
