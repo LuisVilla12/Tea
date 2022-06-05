@@ -18,7 +18,8 @@ $router->post('/crear-cuenta',[LoginController::class,'crear_cuenta']);
 $router->get('/logout',[LoginController::class,'logout']);
 
 // Infantes
-$router->get('/inicio',[PaginasController::class,'inicio']);
+$router->get('/inicio',[AdminController::class,'miscitas']);
+$router->get('/inicio/infantes',[PaginasController::class,'infantes']);
 $router->get('/registrar-infante',[InfanteController::class,'registrar_infante']);
 $router->post('/registrar-infante',[InfanteController::class,'registrar_infante']);
 $router->get('/infantes/administrador',[InfanteController::class,'gestion']);

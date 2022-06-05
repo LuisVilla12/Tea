@@ -70,10 +70,17 @@ class PaginasController {
             'horarios'=>$horarios
         ]);
     }
-    public static function inicio(Router $router){        
+    // public static function inicio(Router $router){        
+    //     // $idTutor=$_SESSION['id'];
+    //     // $infantes=Infante::allId($idTutor);
+    //     $router->render('agenda/inicio',[
+    //         // 'infantes'=>$infantes            
+    //     ]);
+    // }
+    public static function infantes(Router $router){        
         $idTutor=$_SESSION['id'];
         $infantes=Infante::allId($idTutor);
-        $router->render('agenda/inicio',[
+        $router->render('agenda/infantes',[
             'infantes'=>$infantes            
         ]);
     }

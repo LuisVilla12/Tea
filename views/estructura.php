@@ -1,6 +1,7 @@
 <?php 
 // debuguear($_SESSION);
-$logueado= $_SESSION['logueado']?? 0
+// // debuguear($_SESSION);
+$logueado= $_SESSION['logueado']?? 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">

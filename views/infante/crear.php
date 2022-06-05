@@ -3,10 +3,6 @@
 </div>
 <main class="contenedor-max centrar-contenido">
 <form action="" method="POST" class="formulario contenedor">
-<?php
-    $idTutor=$_SESSION['id'];
-    include_once __DIR__ . '/../autenticacion/alertas.php';    
-?>
     <fieldset>
         <legend>Datos generales</legend>
     <div class="tres_campos">
@@ -63,10 +59,15 @@
             <input type="hidden" name="idUsuario" value="<?php echo $idTutor?>">
         </div>
     </fieldset>
+    <?php
+    $idTutor=$_SESSION['id'];
+    include_once __DIR__ . '/../autenticacion/alertas.php';    
+?>
     <div class="centrar">
         <!-- <a href="/inicio" class="btn">Volver al inicio</a> -->
         <input type="submit" class="btn-enviar" value="Registrar infante">
     </div>
+    
 </form>
 </div>
 </main>
