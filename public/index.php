@@ -32,6 +32,8 @@ $router->get('/admin',[AdminController::class,'index']);
 // Agenda
 // $router->get('/admin/agenda',[PaginasControler::class,'inicio']);
 $router->get('/agenda',[AdminController::class,'agenda']);
+$router->get('/agenda/asistir',[AdminController::class,'asistio']);
+$router->post('/agenda/eliminar',[AdminController::class,'eliminar']);
 
 // Noticia
 $router->get('/noticias',[NoticiasController::class,'index']);

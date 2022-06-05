@@ -11,7 +11,7 @@
                 <h4>Administrar infantes</h4> 
             </div>
         </a>
-        <a href="/citas/admin">
+        <a href="/agenda">
             <div class="inicio__opcion3">
                 <h4>Administrar citas</h4>         
             </div>        
