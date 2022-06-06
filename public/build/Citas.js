@@ -21,6 +21,7 @@ function iniciarApp() {
 //await hace un tiempo de espera para que realize la petición
 function idInfante() {
     const idInfante = document.querySelector('#id_infante');
+    cita.id_infante=idInfante.value;
     idInfante.addEventListener('input', (e) => {
         cita.id_infante = e.target.value;
         // console.log(cita);
@@ -33,6 +34,8 @@ function idTutor() {
 }
 function seleccionarHora() {
     const inputHora = document.querySelector('#id_horario');
+    cita.id_horario=inputHora.value;
+    
     inputHora.addEventListener('input', (e) => {
         cita.id_horario = e.target.value;
         // console.log(cita);
@@ -41,6 +44,7 @@ function seleccionarHora() {
 
 function seleccionarFecha() {
     const inputFecha = document.querySelector('#fecha');
+    cita.fecha=inputFecha.value;
     inputFecha.addEventListener('input', (e) => {
         const dia = new Date(e.target.value).getUTCDay();
         // 0 es domingo,1 lunes,2 martes... 6 sabado
@@ -81,10 +85,8 @@ function guardar() {
     const btnGuardar = document.querySelector('#guardar');
     btnGuardar.addEventListener('click', (e) => {
         e.preventDefault();
+        console.log(cita);
         reservarCita();
-        // const id =  e.target.dataset.id;
-        // console.log(id); 
-        // confirmarEliminar(id); 
     });
 }
 // 
@@ -92,21 +94,21 @@ async function reservarCita() {
     const {id_tutor,id_infante, id_horario,fecha} = cita;
     const datos = new FormData();
     // datos.append('id', id);
-    datos.append('id_infante', id_infante);
     datos.append('id_tutor', id_tutor);
+    datos.append('id_infante', id_infante);
     datos.append('id_horario', id_horario);
     datos.append('fecha', fecha);
     datos.append('asistir', '0');
     datos.append('cancelo', '0');
     try {
-        const url = "http://localhost:3000/cita";
+        const url = "http://localhost:3000/api/citas";
         const respuesta = await fetch(url, {
             method: 'POST',
             // body cuerpo de la peticion
             body: datos
         });
         const resultado = await respuesta.json();
-        console.log(resultado.resultado);
+        // console.log(resultado.resultado);
         if (resultado.resultado) {
             Swal.fire({
                 icon: 'success',
@@ -114,10 +116,12 @@ async function reservarCita() {
                 text: 'Tu cita fue registrada correctamente',
                 // footer: '<a href="">Why do I have this issue?</a>'
                 button: 'OK'
+                // footer: '<a href="/inicio">OK</a>'
             }).then(() => {
                 setTimeout(() => {
                     window.location.reload();
-                }, 8000);
+                    window.location.href = "http://localhost:3000/inicio";
+                }, 500);
             })
         };
     } catch (error) {
@@ -129,7 +133,7 @@ async function reservarCita() {
         }).then(() => {
             setTimeout(() => {
                 window.location.reload();
-            }, 8000);
+            }, 3000);
         })
     }
 }

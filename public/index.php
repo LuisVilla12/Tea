@@ -7,6 +7,7 @@ use Controllers\PaginasController;
 use Controllers\LoginController;
 use Controllers\InfanteController;
 use Controllers\NoticiasController;
+use Controllers\APIController;
 $router = new Router();
 // Iniciar sesión
 $router->get('/login',[LoginController::class,'login']);
@@ -44,7 +45,7 @@ $router->post('/noticias/crear',[NoticiasController::class,'crear']);
 $router->get('/noticias/actualizar',[NoticiasController::class,'actualizar']);
 $router->post('/noticias/actualizar',[NoticiasController::class,'actualizar']);
 $router->post('/noticias/eliminar',[NoticiasController::class,'eliminar']);
-
+$router->post('/api/citas',[APIController::class,'guardar']);
 // Publica
 $router->get('/',[PaginasController::class,'index']);
 $router->get('/materia-de-apoyo',[PaginasController::class,'MDAPC']);

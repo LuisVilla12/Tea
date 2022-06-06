@@ -32,31 +32,7 @@ class PaginasController {
         $router->render('pages/noticias',[]);
     }
     public static function cita(Router $router){
-        $alertas=[];
-        $cita = new Cita();
-        if($_SERVER['REQUEST_METHOD']=='POST'){
-            $cita->sincronizar($_POST);
-            $resultadoExisteCita =$cita->existeCitaEnEseDia($cita->fecha);
-            // si no hay citas ese dia
-            if(!$resultadoExisteCita){
-                $resultado=$cita->guardar();
-                $respuesta=[
-                    'resultado'=>$resultado   
-               ];
-               echo json_encode($respuesta);
-            }
-            else{
-                $resultadoExisteCitaHorario =$cita->existeCitaEnEseHorario($cita->fecha,$cita->id_horario);
-                // debuguear($resultadoExisteCitaHorario);
-                if(!$resultadoExisteCitaHorario){
-                    $resultado=$cita->guardar();
-                    $respuesta=[
-                        'resultado'=>$resultado   
-                   ];
-                   echo json_encode($respuesta);                    
-                }
-            }
-        }
+        // $alertas=[];
         $idTutor=$_SESSION['id'];
         $infantes=Infante::allId($idTutor);
         $horarios=Horarios::all();
