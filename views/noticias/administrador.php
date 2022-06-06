@@ -1,8 +1,8 @@
 <h2 class="admin__titulo">Administrador de noticias</h2>
 <main class="contenedor">
     <div class="space_between">
-        <a href="/admin" class="btn">Volver</a>
-        <a href="/noticias/crear" class="btn">Añadir noticia</a>
+        <a href="/admin" class="btnVolver">Volver</a>
+        <a href="/noticias/crear" class="btn_dos">Añadir noticia</a>
     </div>
     <table class="lista">
         <thead>

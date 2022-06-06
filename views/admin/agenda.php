@@ -4,7 +4,7 @@
 // exit;
 ?>
 <div class="recuadro__admin">
-    <p>Agenda</p>
+    <p class="admin">Agenda</p>
 </div>
 
 <div class="busqueda contenedor">

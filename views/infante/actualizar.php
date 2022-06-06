@@ -7,7 +7,7 @@
         // debuguear($alertas);
         ?>
     <div class="space_center">
-        <a href="/infantes/administrador" class="btn" >Volver</a>
+        <a href="/infantes/administrador" class="btnVolver" >Volver</a>
         <input type="submit" value="Actualizar" id="actualizarInfante" class="btn-enviar">
     </div>
 

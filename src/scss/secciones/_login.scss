@@ -52,14 +52,20 @@
     width: auto;
     p{
         padding:2rem 9.5rem ;
-        background-color: #EB566E;
         margin: 2rem 0 0 0;
         display: inline-block;
         text-transform: uppercase;
         color: v.$blanco;
         font-weight: bold;
         font-size: 3rem;
+        &.admin{
+            background-color: #EB566E;
+        }
+        &.infantes{
+            background-color: #3D6F89;
+        }
     }
+    
 }
 .recuadro__registro{
     display: inline-block;
@@ -89,8 +95,28 @@
         font-size: 3rem;
     }
 }
+// .centrar-contenido{
+   
+// }
 .formulario{
     border: .2rem solid #606060;
     padding: 2rem 1rem 0 1rem;
     margin: 1rem 0 2rem 0;
+    &.fondo{
+        @include m.tablet {
+            padding-bottom: 6.5rem;
+            background-image: url('/build/img/PersonasconR.png');
+            background-position: 3rem 2rem;
+            background-size: 60rem;
+            background-repeat: no-repeat;    
+        }
+        // height: 20rem;
+    }
+}
+.fondo_max{
+    padding-bottom: 6rem;
+    background-image: url('/build/img/PersonaMujerR.png');
+    background-position: 50% bottom ;
+    background-size: 10rem;
+    background-repeat: no-repeat;   
 }

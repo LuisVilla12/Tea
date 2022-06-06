@@ -2,9 +2,9 @@
 // debuguear($_SESSION);
 ?>
 
-<main class="contenedor inicio">
+<main class=" tabla__rompe inicio">
     <h2 class="text-center titulo__login">Infantes registrados</h1>
-    <div class="space_between">
+    <div class="space_between contenedor">
         <a href="/inicio" class="btn_uno">Inicio</a>
         <a href="/registrar-infante" class="btn_dos">Registrar infante</a>
         <!-- <a href="/cita" class="btn_secundario">Agendar cita</a> -->
@@ -12,11 +12,11 @@
     <?php if(count($infantes)===0):?>
         <p>No hay infantes registrados</p>
     <?php else:?>
-    <table class="lista">
+    <table class="lista contenedor">
         <thead>
             <tr>
                 <th>Nombre</th>
-                <th>Genero</th>
+                <th>Género</th>
                 <th>Edad</th>
                 <th>Acciones</th>
             </tr>

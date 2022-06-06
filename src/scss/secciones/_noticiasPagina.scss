@@ -2,6 +2,21 @@
 @use 'base/mixins' as m;
 .noticias {
     margin: 3rem auto;
+    // background-image: url('../img/FondoRompecabezas.png');
+    // background-position: left center;
+    // background-size: cover;
+    // // background-attachment:scroll;
+    // background-repeat: no-repeat;
+    // // width: 60%;
+    // @include m.tablet {
+    //     background-position: left center;
+    //     width: 100%;
+    //  }
+    // @include m.desktop {
+    //     background-position: right center;
+    //     width: 100%;  
+    // }
+    // margin: 3rem auto;
     &__grid{
         @include m.tablet {
             @include m.grid(2,2rem);

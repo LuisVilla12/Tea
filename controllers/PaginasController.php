@@ -5,10 +5,14 @@ use MVC\Router;
 use Model\Infante;
 use Model\Horarios;
 use Model\Cita;
+use Model\Noticia;
 
 class PaginasController {
     public static function index(Router $router){
-        $router->render('pages/index',[]);
+        $noticias = Noticia::allLimit(3);
+        $router->render('pages/index',[
+            'noticias'=>$noticias
+        ]);
     }
     public static function MDAPC(Router $router){
         $router->render('pages/materialDeApoyo',[]);

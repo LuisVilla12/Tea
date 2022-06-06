@@ -4,10 +4,11 @@ namespace Controllers;
 use MVC\Router;
 use Model\Noticia;
 
+
 class NoticiasController{
     public static function index(Router $router){
         // estaAutenticado();    
-        $noticias= Noticia::all();
+        $noticias= Noticia::allNoticias();
         $router->render('noticias/index', [
             'noticias'=>$noticias
         ]); 

@@ -58,3 +58,34 @@
         }
     }
 }
+.tabla__fondo{
+    background-image: url('../img/FondoRompecabezas.png');
+    // background-position: bottom center;
+    background-size: cover;
+    // background-attachment:fixed;
+    width: 100%;
+    @include m.tablet {
+        background-position: center center;
+    }
+    @include m.desktop {
+        // background-size: cover;
+        background-position: top center;
+        width: 100%;  
+    }
+}
+.tabla__rompe{
+    background-image: url('../img/Rompecabezas/4girado.png'),url('../img/Rompecabezas/3girado.png');
+    // background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment:fixed;
+    width: 100%;
+    @include m.tablet {
+        // background-position: bottom center;
+    }
+    @include m.desktop {
+        background-size: 23rem;
+        background-position: left bottom,right;
+        width: 100%;  
+    }   
+}

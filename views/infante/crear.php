@@ -1,8 +1,9 @@
 <div class="recuadro__form">
     <p>Registrate infante</p>
 </div>
+
 <main class="contenedor-max centrar-contenido">
-<form action="" method="POST" class="formulario contenedor">
+<form action="" method="POST" class="formulario fondo">
     <fieldset>
         <legend>Datos generales</legend>
     <div class="tres_campos">
@@ -63,9 +64,13 @@
     $idTutor=$_SESSION['id'];
     include_once __DIR__ . '/../autenticacion/alertas.php';    
 ?>
-    <div class="centrar">
+    <div class="centrar ">
         <!-- <a href="/inicio" class="btn">Volver al inicio</a> -->
         <input type="submit" class="btn-enviar" value="Registrar infante">
+        <!-- <a href=""></a> -->
+        <!-- <div class="acciones mg-3">
+            <a href="/crear-cuenta"><span></span> </a>
+        </div> -->
     </div>
     
 </form>

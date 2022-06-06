@@ -1,16 +1,14 @@
 <!-- <h2 class="admin__titulo">Administrador de infantes</h2> -->
-<div class="recuadro__admin">
-    <p>Administrador de</p>
+<div class="recuadro__admin ">
+    <p class="infantes">Administrador  de  Registros  infantes</p>
 </div>
-<div class="recuadro__registro">
-    <p>Registros infantes</p>
-</div>
+
 <!-- <div class="recuadro__usuario">
     <p>infante</p>
 </div> -->
 <main class="contenedor">
     <div class="space_between">
-        <a href="/admin" class="btn">Volver</a>
+        <a href="/admin" class="btn_uno">Volver</a>
         <!-- <a href="/noticias/crear" class="btn">Añadir noticia</a> -->
     </div>
     <table class="lista">
@@ -18,7 +16,7 @@
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Genero</th>
+                <th>Género</th>
                 <th>Edad</th>
                 <th>Tutor</th>
                 <th>Opciones</th>

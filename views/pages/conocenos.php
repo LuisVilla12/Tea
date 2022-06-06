@@ -1,5 +1,5 @@
 <main class="integrantes contenedor">
-        <h2 class="integrantes__titulo">Proyecto: De la teoria a la practica ciencia tecnologia para el autismo.
+        <h2 class="integrantes__titulo">De la teoría a la práctica: ciencia y tecnología para el autismo.
 </h2>
         <!-- <div class="integrantes__grid"> -->
                 <div class="integrantes__contenido">
@@ -18,17 +18,31 @@
                                         <div class="subtitulo dos">
                                                 <h3>Profesores colaboradores</h3>
                                         </div>
-                                                <p>María Salomé Alejandre Apolinar</p>
-                                                <p>Hugo Amores Perez</p>
-                                                <p>Angelica Garcia Gonzales</p> 
+                                        <div class="profes__grid">
+                                                <div class="profesores">
+                                                        <p>María Salomé Alejandre Apolinar</p>
+                                                        <p>Hugo Amores Pérez</p>
+                                                        <p>Irma Angélica García González</p> 
+                                                </div>
+                                                <div class="profes__mask"> 
+                                                        <img src="/build/img/LogoITSX.png" alt="" class="profesUno">       
+                                                </div>
+                                        </div>
                                 </div>
                                 <div>
                                         <div class="subtitulo dos">
                                                 <h3>Profesores colaboradores</h3>
                                         </div>
-                                        <p>Rebeca Toledo cardenas</p> 
-                                        <p> Maria elena hernadez aguilar</p>
-                                        <p>Jorge Manzo Denes</p>
+                                        <div class="profes__grid">
+                                                <div class="profesores">
+                                                        <p>Jorge Manzo Denes</p>        
+                                                        <p>Rebeca Toledo Cárdenas</p> 
+                                                        <p>Maria Elena Hernández Aguilar</p>
+                                                </div>
+                                                <div class="profes__mask"> 
+                                                        <img src="/build/img/LogoUV.png" alt="" class="profesUno">       
+                                                </div>
+                                        </div>
                                 </div>
                                 <div>
                                         <div class="subtitulo cuatro">

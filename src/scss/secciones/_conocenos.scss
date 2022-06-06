@@ -29,7 +29,6 @@
         }
     }
     p{
-        background-color: #FFF4E6;
         margin: 0;
         padding: 1rem;
         color: #27798F;
@@ -42,4 +41,27 @@
 }
 .ultimo{
     margin-top: 2rem;
+}
+.profes{
+    &__grid{
+        background-color: #FFF4E6;
+        @include m.tablet {
+            @include m.grid(3,1rem);
+        }
+    }
+    &__mask{
+        display: grid;
+        place-items: center;
+    }
+}
+.profesores{
+    @include m.tablet {
+        grid-column: 1/3;
+    }
+}
+.profesUno{
+    // background-image: url('../img/');
+    height: 10rem;
+    object-fit: contain;
+    width: 8rem;
 }

@@ -2,22 +2,23 @@
 // debuguear($citas);
 ?>
 
-<main class="contenedor inicio">
+<main class="inicio">
     <h2 class="text-center titulo__login">Mis citas</h1>
-    <div class="space_between">
-        <a href="/inicio/infantes" class="btn_uno">Ver infantes</a>
+    <div class="contenedor space_between">
+        <a href="/inicio/infantes" class="btnVolver">Ver infantes</a>
         <a href="/cita" class="btn_dos">Agendar cita</a>
     </div>    
-    <?php if(count($citas)===0):?>
-        <p>No hay citas</p>
-        <?php else:?>
-            <table class="lista">
+    <div class="tabla__fondo">
+        <?php if(count($citas)===0):?>
+            <p>No hay citas</p>
+            <?php else:?>
+                <table class="lista contenedor">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nombre infante</th>
                         <th>Edad</th>
-                        <th>Genero</th>
+                        <th>Género</th>
                         <th>Fecha</th>
                         <th>Hora inicio</th>
                         <th>Opciones</th>
@@ -25,9 +26,9 @@
                 </thead>
                 <tbody>
                     
-            <?php foreach ($citas as $cita) : ?>
-                
-                <tr  class="<?php echo $cita->asistir==1? 'verde': 'nada';?>">
+                    <?php foreach ($citas as $cita) : ?>
+                        
+                        <tr  class="<?php echo $cita->asistir==1? 'verde': 'nada';?>">
                     <td><?php echo $cita->id ?></td>
                     <td><?php echo $cita->nombreInfante?></td></td>
                     <td>
@@ -52,9 +53,10 @@
                     </td>
                 </tr>
             <?php endforeach; ?>
-        <?php endif;?>
+            <?php endif;?>
         </tbody>
     </table>
+</div>
 </main>
 <?php
     $script="

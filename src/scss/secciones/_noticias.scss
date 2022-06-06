@@ -85,3 +85,7 @@
         @include m.boton(v.$botones,v.$blanco);
     }
 }
+.btn_verMas{
+    margin:2rem auto;
+    @include m.boton(#FEA02F,v.$blanco);
+}

@@ -103,3 +103,34 @@
         }
     }
 }
+
+.cat3__documento{
+    margin: 3rem 0;
+    &__grid{
+        @include m.tablet {
+            @include m.grid(2,3rem);
+        }
+    }
+}
+.documento{
+    margin-bottom: 3rem;
+    @include m.tablet {
+        margin-bottom: 0;
+    }
+    &__titulo{
+        text-align: center;
+        color: v.$blanco;
+        font-weight: bold;
+    }
+    padding: 2rem;
+    border-radius: 2rem;
+    &.uno{
+     background-color: #7A5AA2;
+    }
+    &.dos{
+        background-color: #009CC5;
+    }
+    &.tres{
+        background-color: #F59B06;
+    }
+}

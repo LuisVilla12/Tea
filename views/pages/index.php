@@ -10,7 +10,7 @@
                 <h2>Autismo lo que necesitas conocer.</h2>
             </div>
             <div class="conoce__descripcion">
-                <p>Los trastornos del espectro autista (TEA), comúnmente llamados "autismo", son un grupo de desordenes complejos del desarrollo. Se caracterizan por dificultades en la interacción social y la comunicación.</p>
+                <p>Los trastornos del espectro autista (TEA), comúnmente llamados "autismo", son un grupo de desórdenes complejos del desarrollo. Se caracterizan por dificultades en la interacción social y la comunicación.</p>
                 <div class="centrar">
                     <a href="" class="conoce__boton">Conoce más</a>
                 </div> 
@@ -24,7 +24,7 @@
             <div class="sabias__info">
                 <h4 class="sabias__titulo">Sabiás que...</h4>
                 <h3 class="sabias__subtitulo">Es un trastorno que comparten muchos genios</h3>
-                <p class="">Es un trastorno que compartes muchos genios Celebridades como Woody Allen, Michael Jackson  Bill Gates y Stanley Kubrick son algunos de ellos.</p>
+                <p class=""> Celebridades como Woody Allen, Michael Jackson  Bill Gates y Stanley Kubrick son algunos de ellos.</p>
                 <div class="centrar">
                     <a href="/sabias" class="conoce__boton">Conoce más</a>
                 </div>
@@ -48,7 +48,18 @@
         <div class="contenedor">
             <h2 class="noticiero__inicio__titulo">Te puede interesar</h2>
             <div class="noticiero__inicio__grid">
-                <section class="noticia">
+                <?php foreach($noticias as $noticia):?>
+                    <section class="noticia">
+                    <div class="noticia__mask">
+                        <img src="/build/img/<?php echo $noticia->urlImagen?>">
+                    </div>
+                    <h4 class="noticia__titulo"><?php echo $noticia->titulo?></h4>
+                    <div class="centrar">
+                        <a class="noticia__btn" href="<?php $noticia->url?>">Leer más</a>
+                    </div>                
+                </section>
+                <?php endforeach;?>
+                <!-- <section class="noticia">
                     <div class="noticia__mask">
                         <img src="/build/img/15abril.jpg">
                     </div>
@@ -74,13 +85,13 @@
                     <div class="centrar">            
                         <a class="noticia__btn" href="https://autismodiario.com/2021/07/18/autismo-cuando-el-agresor-es-el-estado-el-culpable-eres-tu/">Leer más</a>            
                     </div>
-                </section>
+                </section> -->
             </div>
         </div>
     </div>
 
     <div class="centrar">
-    <a class="btn" href="/noticias">Ver más noticias</a>
+    <a class="btn_verMas" href="/noticias">Ver más noticias</a>
     </div>
     </section>
     

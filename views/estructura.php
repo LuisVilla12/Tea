@@ -11,7 +11,7 @@ $logueado= $_SESSION['logueado']?? 0;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEA PUZZLE</title>
+    <title>ABANCA</title>
     <link rel="icon" type="image/jpg" href="/build/img/ico.ico">
     <link rel="preload" href="/build/css/app.css" as="style">
     <link rel="stylesheet" href="/build/css/app.css">
@@ -30,7 +30,7 @@ $logueado= $_SESSION['logueado']?? 0;
                 <img src="/build/img/iconoo.png" alt="logotipo" class="header__img">
                 <a href="/">
                     <p class="header__titulo">
-                        CYTEA<span></span>
+                    ABANCA<span></span>
                     </p>
                 </a>
             </div>
@@ -87,9 +87,13 @@ $logueado= $_SESSION['logueado']?? 0;
                     <div class="ubicacion__descripcion">
                         <div class="ubicacion__redes">
                             <nav class="redes__iconos">
-                                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/people/Abanca-Autismo/100081771052794/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                                 <a href="https://wa.me/522282552625?text=Hola" target="_blank">
                                 <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://twitter.com/AbancaAutismo" target="_blank">
+                                <!-- <i class="fa-brands fa-twitter-square"></i> -->
+                                <i class="fa-brands fa-twitter"></i>
                                 </a>
                                 <a href="https://www.instagram.com" target="_blank">
                                 <i class="fa-brands fa-instagram"></i>

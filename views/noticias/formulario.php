@@ -31,7 +31,7 @@
             <input class="campo__input" type="file" id="imagen" name="noticia[urlImagen]">
         </div>
         <div class="campo">
-            <label class="campo__label" for="descripcion">Descripcion: </label>
+            <label class="campo__label" for="descripcion">Descripción: </label>
             <textarea name="noticia[descripcion]" id="descripcion" cols="30" rows="10"><?php echo sanitizar($noticia->descripcion); ?>
             </textarea>
         </div>

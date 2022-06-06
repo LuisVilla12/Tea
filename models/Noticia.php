@@ -25,7 +25,7 @@ class Noticia extends ActiveRecord{
     // Validar
     public function validarErrores(){
         if(!$this->titulo){
-            self::$alertas['error'][]='Debe ingresar un titulo';
+            self::$alertas['error'][]='Debe ingresar un título';
         }
         if(!$this->fuente){
             self::$alertas['error'][]='Debe ingresar la fuente';
@@ -48,5 +48,22 @@ class Noticia extends ActiveRecord{
        
         return self::$alertas;
     }
+    public static function allNoticias(){
+        $query="SELECT * FROM " . self::$tabla . " ORDER BY fecha DESC";
+        // debuguear($query);
+        // exit;
+        // $resultado = self::$db->query($query);
+        $resultado = self::consultarSQL($query);
+        // debuguear($resultado);
+        // exit;
+        return $resultado;
+    } 
+    public static function allLimit($limite){
+        $query="SELECT * FROM " . self::$tabla . " ORDER BY fecha DESC LIMIT " . $limite ;
+        $resultado = self::consultarSQL($query);
+        // debuguear($resultado);
+        // exit;
+        return $resultado;
+    } 
 }
 ?>  

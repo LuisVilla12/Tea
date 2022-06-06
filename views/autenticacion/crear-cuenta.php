@@ -1,11 +1,11 @@
 <div class="recuadro__form">
     <p>Registrate ahora</p>
 </div>
-<main class="contenedor-max centrar-contenido">
+<main class="contenedor-max centrar-contenido ">
     <?php
     include_once __DIR__ . '/alertas.php';
     ?>
-<form action="/crear-cuenta" method="POST" class="formulario">
+<form action="/crear-cuenta" method="POST" class="formulario fondo ">
     <!-- <p class="descripcion">Contesta el siguiente formulario</p> -->
     <fieldset>
         <legend>Datos generales</legend>

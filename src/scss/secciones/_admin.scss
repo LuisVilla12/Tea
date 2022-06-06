@@ -8,27 +8,40 @@
     &__grid{
         margin-bottom: 3rem;
         @include m.tablet {
-            @include m.grid(3,0);
+            @include m.grid(3,1rem);
         }
     }
     &__opcion1,&__opcion2,&__opcion3{
         padding: 5rem;
         color: v.$blanco;
         text-align: center;
+        background-position: center center;
+        background-size: 60rem;
+        // background-size: contain;
     }
     &__opcion1{
-        background-color: #73C5EA;
+        background-image: url('../img/Rompecabezas/1.png');
+        // background-color: #73C5EA;
+        
     }
     &__opcion2{
-        background-color: #FFD248;
+        background-image: url('../img/Rompecabezas/2.png');
+        // background-color: #FFD248;
     }
     &__opcion3{
-        background-color: #EE6C7F;
+        background-image: url('../img/Rompecabezas/3.png');
+        // background-color: #EE6C7F;
     }
 }
+
 .verde{
     background-color: #95c11f;
 }
 .btn_uno,.btn_dos{
     @include m.boton(v.$botones,v.$blanco);
+    margin: 2rem 0;
+}
+.btnVolver{
+    @include m.boton(#73C5EA,v.$blanco);
+    margin: 2rem 0;
 }
