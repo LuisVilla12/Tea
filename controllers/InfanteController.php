@@ -13,7 +13,9 @@ class InfanteController{
             $infante->sincronizar($_POST);
             $alertas=$infante->validarErrores();
             if(empty($alertas)){
-                $resultado=$infante->guardar();                    
+                $resultado=$infante->guardar();
+                // debuguear($resultado);
+                // exit;                    
                 if($resultado){
                     header('Location: /inicio');
                 }
@@ -28,8 +30,10 @@ class InfanteController{
     public static function gestion(Router $router){
         // estaAutenticado();    
         $infantes= InfanteTemp::allIfantes();
+        // $total= InfanteTemp::contador();
         $router->render('infante/administrador', [
             'infantes'=>$infantes
+            
         ]); 
     }   
     public static function actualizar(Router $router){

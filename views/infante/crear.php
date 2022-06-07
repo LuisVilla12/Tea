@@ -1,3 +1,6 @@
+<?php 
+// debuguear($_SESSION);
+?>
 <div class="recuadro__form">
     <p>Registrate infante</p>
 </div>
@@ -57,7 +60,7 @@
                 <input class="campo__input" type="tel" id="peso" placeholder="Peso (KG)" name="peso"
                 value="<?php echo sanitizar($infante->peso)?>">
             </div>
-            <input type="hidden" name="idUsuario" value="<?php echo $idTutor?>">
+            <input type="hidden" name="idUsuario" value="<?php echo $_SESSION['id']?>">
         </div>
     </fieldset>
     <?php

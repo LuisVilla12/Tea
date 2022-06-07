@@ -26,7 +26,7 @@ class Infante extends ActiveRecord{
         $this->idUsuario=$args['idUsuario']?? 1;        
         $this->altura=$args['altura']?? '';        
         $this->peso=$args['peso']?? '';        
-        $this->estudia=$args['estudia']?? 0;        
+        $this->estudia=$args['estudia']?? '';        
         $this->estatus=$args['estatus']?? 0;        
     }
     // Validar
@@ -71,5 +71,6 @@ class Infante extends ActiveRecord{
         $resultado = self::$db->query($query);        
         return $resultado;
     }
+    
 }
 ?>  

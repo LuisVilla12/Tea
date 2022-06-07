@@ -24,6 +24,12 @@ class InfanteTemp extends ActiveRecord{
         $resultado = self::consultarSQL($query);
         return $resultado;
     }
+    // public static function contador() {
+    //     $query = "SELECT COUNT(id) FROM " .  static::$tabla;        
+    //     // $resultado = self::$db->query($query);        
+    //     $resultado = self::consultarSQL($query);
+    //     return $resultado;
+    // }
 
       // Revisa si usuario existe
     // public function existeUsuario(){

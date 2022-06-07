@@ -92,7 +92,7 @@
                                 <h2 class="enlace__h2">Modelos animales para estudiar el autismo</h2>
                             </div>
                             <div class="enlace__contenido tres">
-                                <p class="enlace__descripcion"></p>
+                                <p class="enlace__descripcion">Las investigaciones sobre el origen del autismo han concluido que la causa fundamental se debe a alteraciones en diversas áreas del cerebro durante el desarrollo infantil.</p>
                             </div>
                             <div class="bottom">
                                 <a href="https://www.uv.mx/cienciauv/blog/modelos-animales-para-el-estudio-del-autismo/" class="enlace__btn">Ver</a>
@@ -105,7 +105,7 @@
                                 <h2 class="enlace__h2">Autismo y Sexualidad</h2>
                             </div>
                             <div class="enlace__contenido uno">
-                                <p class="enlace__descripcion"></p>
+                                <p class="enlace__descripcion">Aunque la conducta sexual y la fisiología de la reproducción son temas que han sido estudiados por décadas, sigue siendo un problema complejo aún no resuelto.</p>
                             </div>
                             <div class="bottom">
                                 <a href="https://www.uv.mx/personal/jmanzo/2018/09/04/autismo-y-sexualidad/" class="enlace__btn">Ver</a>
@@ -118,7 +118,7 @@
                                 <h2 class="enlace__h2">Autismo en Tiempos de Coronavirus</h2>
                             </div>
                             <div class="enlace__contenido dos">
-                                <p class="enlace__descripcion"></p>
+                                <p class="enlace__descripcion">Las personas con autismo tienden a mantener una rutina estable y los cambios súbitos de rutina los llevan a diferentes niveles de estrés</p>
                             </div>
                             <div class="bottom">
                                 <a href="https://www.uv.mx/personal/jmanzo/2020/05/25/autismo-en-tiempos-de-coronavirus/" class="enlace__btn">Ver</a>
@@ -131,7 +131,7 @@
                                 <h2 class="enlace__h2">Neurociencias y Arte</h2>
                             </div>
                             <div class="enlace__contenido tres">
-                                <p class="enlace__descripcion"></p>
+                                <p class="enlace__descripcion">El arte es creatividad y la creatividad es producto del funcionamiento de nuestro cerebro. Entender la fusión que hay entre las neurociencias y el arte, como una expresión de la creatividad,</p>
                             </div>
                             <div class="bottom">
                                 <a href="https://www.uv.mx/personal/jmanzo/2019/10/13/neurociencias-y-arte/" class="enlace__btn">Ver</a>
@@ -260,98 +260,58 @@
             <div class="infantes">
                 <div class="cat1__enlace visible">
                     <div class="material__cat1-enlace">
-                        <div class="enlace">
-                        <div class="enlace__grid">
-                            <div class="enlace__titulo centrar">
-                                <h2 class="enlace__h2">Recursos para la intervención en el lenguaje oral y escrito</h2>
-                            </div>
-                            <div class="enlace__contenido">
-                                <p class="enlace__descripcion">lorem</p>
+                        <div class="enlace">    
+                            <div class="enlace__grid">
+                                <div class="enlace__titulo centrar uno">
+                                    <h2 class="enlace__h2">Recursos para la intervención en el lenguaje oral y escrito</h2>
+                                </div>
+                                <div class="enlace__contenido uno">
+                                    <p class="enlace__descripcion">Actividades didácticas de lenguaje oral y escrito, principalmente de morfología y de flexiones verbales, así como también de pragmática, ortografía y habilidades metafonológicas.</p>
+                                </div>
                                 <div class="centrar">
                                     <a href="https://desarrollal.blogspot.com/p/morfologia.html?fbclid=IwAR1AcIuwUGSXVnDpSZ3_AmOLqAJZX8WoA9IDWdfv6H8HTifGAuoBVCzU7hE&m=1" class="enlace__btn">Ver</a>
                                 </div>
                             </div>
-                        </div>
                         </div>   
                         <div class="enlace">
-                        <div class="enlace__grid">
-                            <div class="enlace__titulo centrar uno">
-                                <h2 class="enlace__h2">Trabajar vocabulario y lenguaje, materiales descargables</h2>
+                            <div class="enlace__grid">
+                                <div class="enlace__titulo centrar dos">
+                                    <h2 class="enlace__h2">Trabajar vocabulario y lenguaje, materiales descargables</h2>
+                                </div>
+                                <div class="enlace__contenido dos">
+                                    <p class="enlace__descripcion">Material didáctico sobre vocabulario y lenguaje, para desarrollar el habla.</p>
+                                </div>
+                                <div class="centrar">
+                                        <a href="https://autismonavarra.com/materiales-y-enlaces-de-interes/trabajar-vocabulario-y-lenguaje-autismo/" class="enlace__btn">Ver</a>
+                                </div>
                             </div>
-                            <div class="enlace__contenido uno">
-                                <p class="enlace__descripcion">lorem</p>
-                            </div>
-                            <div class="centrar">
-                                    <a href="https://autismonavarra.com/materiales-y-enlaces-de-interes/trabajar-vocabulario-y-lenguaje-autismo/" class="enlace__btn">Ver</a>
-                            </div>
-                        </div>
                         </div>
                         <div class="enlace">
-                        <div class="enlace__grid">
-                            <div class="enlace__titulo centrar dos">
-                                <h2 class="enlace__h2">Plantillas de tarjetas de pictogramas</h2>
-                            </div>
-                            <div class="enlace__contenido">
-                                <p class="enlace__descripcion dos">lorem</p>
+                            <div class="enlace__grid">
+                                <div class="enlace__titulo centrar tres">
+                                    <h2 class="enlace__h2">Plantillas de tarjetas de pictogramas</h2>
+                                </div>
+                                <div class="enlace__contenido tres">
+                                    <p class="enlace__descripcion">Materiales didácticos, sobre actividades de la vida cotidiana y juegos interactivos para el aprendizaje.</p>
+                                </div>
                                 <div class="centrar">
                                     <a href="https://auticmo.com/plantillas-de-pictogramas-descarga-gratis/" class="enlace__btn">Ver</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     <div class="enlace">
                         <div class="enlace__grid">
-                            <div class="enlace__titulo centrar">
+                            <div class="enlace__titulo centrar uno">
                                 <h2 class="enlace__h2">Navegador especialmente para niños autistas</h2>
                             </div>
-                            <div class="enlace__contenido">
-                                <p class="enlace__descripcion">lorem</p>
-                                <div class="centrar">
-                                    <a href="https://zacbrowser.app/download/" class="enlace__btn">Ver</a>
-                                </div>
+                            <div class="enlace__contenido uno">
+                                <p class="enlace__descripcion">Navegador web (en inglés) diseñado específicamente para niños y adolescentes con trastornos del espectro autista, trastornos generalizados del desarrollo y PDD-NOS</p>
+                            </div>
+                            <div class="centrar">
+                                <a href="https://zacbrowser.app/download/" class="enlace__btn">Ver</a>
                             </div>
                         </div>
                     </div>
-                    <div class="enlace">
-                        <div class="enlace__grid">
-                            <div class="enlace__titulo centrar">
-                                <h2 class="enlace__h2">Necesidades creativas</h2>
-                            </div>
-                            <div class="enlace__contenido">
-                                <p class="enlace__descripcion">lorem</p>
-                                <div class="centrar">
-                                    <a href="https://atendiendonecesidades.blogspot.com/search/label/Ideas" class="enlace__btn">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="enlace">
-                        <div class="enlace__grid">
-                            <div class="enlace__titulo centrar">
-                                <h2 class="enlace__h2">Titulo</h2>
-                            </div>
-                            <div class="enlace__contenido">
-                                <p class="enlace__descripcion">lorem</p>
-                                <div class="centrar">
-                                    <a href="" class="enlace__btn">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="enlace">
-                        <div class="enlace__grid">
-                            <div class="enlace__titulo centrar">
-                                <h2 class="enlace__h2">Titulo</h2>
-                            </div>
-                            <div class="enlace__contenido">
-                                <p class="enlace__descripcion">lorem</p>
-                                <div class="centrar">
-                                    <a href="" class="enlace__btn">Ver</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    
                     </div>
                 </div>
                 <div class="cat2__video">
@@ -400,7 +360,52 @@
                     </div>
                 </div>
                 <div class="cat3__documento">
-                    <p>En desarrollo</p>
+                    <div class="cat3__documento__grid">
+                        <div class="documento uno">
+                            <h2 class="documento__titulo">Álbum de casa</h2>
+                            <div class="centrar">
+                                    <a href="https://autismonavarra.com/wp-content/uploads/2015/09/Mi-%C3%A1lbum-de-casa.pdf" target="_blank" class="enlace__btn">Ver</a>
+                                </div>
+                        </div>
+                        <div class="documento dos">
+                            <h2 class="documento__titulo">Etiquetar Comida</h2>
+                            <div class="centrar">
+                                    <a href="https://autismonavarra.com/wp-content/uploads/2015/09/Etiquetar-comidas-por-Amaya-%C3%81riz.pdf" target="_blank" class="enlace__btn">Ver</a>
+                                </div>
+                        </div>
+                        <div class="documento tres">
+                            <h2 class="documento__titulo">Etiquetar jueguetes</h2>
+                            <div class="centrar">
+                                    <a href="https://autismonavarra.com/wp-content/uploads/2016/11/Etiquetar-juguetes-por-Amaya-%C3%81riz.pdf" target="_blank" class="enlace__btn">Ver</a>
+                                </div>
+                        </div>
+                        <div class="documento uno">
+                            <h2 class="documento__titulo">Etiquetar ropa</h2>
+                            <div class="centrar">
+                                    <a href="https://autismonavarra.com/wp-content/uploads/2016/11/Etiquetar-ropa-por-Amaya-%C3%81riz.pdf" target="_blank" class="enlace__btn">Ver</a>
+                                </div>
+                        </div>
+                        <div class="documento dos">
+                            <h2 class="documento__titulo">Me gusta/No me gusta</h2>
+                            <div class="centrar">
+                                    <a href="https://autismonavarra.com/wp-content/uploads/2015/09/Me-gusta-no-me-gusta-MODELO.pdf" target="_blank" class="enlace__btn">Ver</a>
+                                </div>
+                            </div>
+                        <div class="documento tres">
+                            <h2 class="documento__titulo">Etiquetar animales</h2>
+                            <div class="centrar">
+                                    <a href="https://autismonavarra.com/wp-content/uploads/2016/11/Etiquetar-animales.pdf" target="_blank" class="enlace__btn">Ver</a>
+                                </div>
+                            </div>
+                            <!-- <div class="documento uno">
+                                <h2 class="documento__titulo">Onomatopeyas</h2>
+                                <div class="centrar">
+                                    <a href="https://autismonavarra.com/wp-content/uploads/2016/11/Etiquetar-animales.pdf" target="_blank" class="enlace__btn">Ver</a>
+                                </div>
+                            </div> -->
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

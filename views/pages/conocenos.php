@@ -35,9 +35,12 @@
                                         </div>
                                         <div class="profes__grid">
                                                 <div class="profesores">
-                                                        <p>Jorge Manzo Denes</p>        
-                                                        <p>Rebeca Toledo Cárdenas</p> 
-                                                        <p>Maria Elena Hernández Aguilar</p>
+                                                        <p>Dr. Luis Isauro García Hernández</p>        
+                                                        <p>Dr. Jorge Manzo Denes</p>        
+                                                        <p>Dra. Rebeca Toledo Cárdenas</p> 
+                                                        <p>Dra. Maria Elena Hernández Aguilar</p>
+                                                        <p>Dra. Deissy Herrera Covarrubias</p>
+                                                        <p>Dr. Genaro Alfonso Coria Avila</p>
                                                 </div>
                                                 <div class="profes__mask"> 
                                                         <img src="/build/img/LogoUV.png" alt="" class="profesUno">       

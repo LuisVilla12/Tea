@@ -6,7 +6,10 @@
 <div class="recuadro__admin">
     <p class="admin">Agenda</p>
 </div>
-
+<div class="space_between contenedor">
+    <a href="/admin" class="btn_uno">Volver</a>
+        <!-- <a href="/noticias/crear" class="btn">Añadir noticia</a> -->
+</div>
 <div class="busqueda contenedor">
 <form action="" class="formulario">
     <div class="campo">

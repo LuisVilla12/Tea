@@ -1,3 +1,4 @@
+<!-- <?php debuguear($total); ?> -->
 <!-- <h2 class="admin__titulo">Administrador de infantes</h2> -->
 <div class="recuadro__admin ">
     <p class="infantes">Administrador  de  Registros  infantes</p>
@@ -10,6 +11,9 @@
     <div class="space_between">
         <a href="/admin" class="btn_uno">Volver</a>
         <!-- <a href="/noticias/crear" class="btn">Añadir noticia</a> -->
+    </div>
+    <div>
+        <!-- <p>Total infantes registrados:</p> -->
     </div>
     <table class="lista">
         <thead>
