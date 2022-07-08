@@ -17,7 +17,10 @@ class Router {
         $rutasProtegidas=[];
 
         // Localiza la ruta
-        $urlActual= $_SERVER['PATH_INFO']?? '/';
+        // Anterior de modo local
+        // $urlActual= $_SERVER['PATH_INFO']?? '/';
+        // Modo host
+        $urlActual= $_SERVER['REQUEST_URI']=== '' ? '/': $_SERVER['REQUEST_URI'] ;
         // Identifica que metodo es
         $metodo=$_SERVER['REQUEST_METHOD'];
         // debuguear($urlActual);
